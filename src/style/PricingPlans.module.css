@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+.creative {
+  width: 90%;
+  border-radius: 20px;
+  height: 400px;
+  color: white;
+  margin: 0 auto;
+}
+
+.creative h2 {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+.creative p {
+  font-size: 16px;
+  text-align: center !important;
+}
+.creative button {
+  margin-top: 20px;
+}

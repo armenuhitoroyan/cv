@@ -1,0 +1,277 @@
+/* Տառատեսակը */
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+.container {
+  font-family: Sans-Serif;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding-block: 20px;
+}
+
+.container body {
+  overflow: hidden;
+}
+
+.sidebar {
+  height: 100%;
+  width: 75px;
+  border-radius: 50px;
+  border: 1px solid #9ba6ae;
+}
+
+.sidebar img {
+  height: 100%;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.sidebar nav {
+  margin-top: 20px;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+}
+
+.icon_container {
+  margin-top: auto;
+  padding: 20px;
+  background: #9ba6ae;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.icon_container :first-child {
+  font-size: 25px;
+}
+
+/* User Container */
+
+.user_container {
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-inline-start: 7%;
+  text-align: start;
+  margin-top: 300px;
+  width: 100%;
+
+  padding-left: 15px;
+}
+
+.user_container h1,
+p {
+  margin-top: 40px;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 50px;
+  text-align: start !important;
+}
+.user_container h1 {
+  margin-left: 0px !important;
+}
+
+.user_container p {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.user_container h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-align: left !important;
+  margin-left: 100px;
+  margin-top: -60px;
+}
+
+.user_container ul {
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 150px;
+  margin-bottom: 50px;
+}
+
+.user_container ul li {
+  position: relative;
+  padding-left: 50px;
+  margin-top: 20px;
+  margin: 0%;
+}
+
+.user_container ul li::before {
+  content: "•";
+  color: #00ce7d;
+  font-size: 65px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 15px;
+  margin-top: -40px;
+}
+
+/* Profile Card */
+
+.card {
+  background-color: #7c4dfc; /* Purple background */
+  width: 50%;
+  height: 103.5%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-right: 10%;
+}
+
+.image_container {
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.role {
+  color: white !important;
+  text-align: center !important;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.card p {
+  margin: 10px 0;
+  margin-top: 20px;
+  font-size: 16px !important;
+}
+
+.button {
+  background-color: white;
+  color: #7c4dfc;
+  border: none;
+  border-radius: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #eee;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user {
+    width: 100%;
+    order: 2; /* փոխում է դիվերի հերթականությունը */
+  }
+
+  .context {
+    width: 100%;
+    order: 1; /* փոխում է դիվերի հերթականությունը */
+    margin-bottom: 0;
+  }
+
+  .user_container {
+    margin-left: 0px;
+  }
+
+  .user_container h1,
+  h2,
+  p {
+    text-align: center !important;
+  }
+
+  .user_container ul {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .sidebar {
+    visibility: hidden;
+  }
+
+  .card {
+    margin: 0 auto;
+    /* visibility: hidden; */
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
+  .user_container h1,
+  p {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .user_container p {
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .user_container h2 {
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -200px;
+  }
+
+  .user_container ul {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .user_container button {
+    width: 200px;
+  }
+
+  .sidebar {
+    visibility: hidden;
+  }
+
+  .card {
+    margin: 0 auto;
+    /* visibility: hidden; */
+  }
+}

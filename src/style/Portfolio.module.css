@@ -1,0 +1,177 @@
+.container {
+  width: 100%;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+.box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Provider component */
+
+.provider_container {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #38006b;
+  padding: 20px 10px;
+  position: relative;
+  z-index: 5;
+  margin-left: 100px;
+  margin-top: 65px;
+}
+
+.providr_box {
+  margin-left: -100px;
+}
+
+.provider {
+  width: 40%;
+}
+
+.provuder_image {
+  width: 60%;
+}
+
+.imgs {
+  margin-top: 50px;
+}
+/* Card -> Information */
+
+.card {
+  width: 100% !important;
+  padding: 2%;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.card_content {
+  border: 3px solid #6928e6;
+  padding: 20px;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.leftContent {
+  text-align: start;
+  width: 60%;
+}
+
+.rightContent {
+  border: 3px solid #6928e6;
+  border-radius: 20px;
+  padding: 20px;
+  width: 40%;
+}
+
+.right_part {
+  border: 0px !important;
+  height: 450px;
+}
+
+.img_box {
+  width: 75%;
+  height: 450px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .provuder_image {
+    width: 100%;
+    padding-top: 150px;
+  }
+
+  .leftContent,
+  .rightContent {
+    width: 100% !important;
+  }
+
+  .leftContent {
+    margin-top: 100px;
+  }
+
+  .portfolio_images {
+    gap: 0px;
+    padding: 0px;
+    column-gap: 10px;
+    margin-left: 0px !important;
+    left: 0px;
+  }
+
+  .img_box {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .right {
+    margin-top: 30px;
+  }
+
+  .download {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .right_part {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .provider {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .provuder_image {
+    width: 100%;
+  }
+
+  .provider_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .imgs {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card_content {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .rightContent,
+  .leftContent {
+    width: 100%;
+  }
+
+  .right_part {
+    height: 300px;
+  }
+
+  .leftContent {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 500px;
+  }
+
+  .providr_box {
+    margin-left: 0px;
+    width: 100%;
+  }
+}

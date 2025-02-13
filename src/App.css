@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100vw;
+}
+
+button {
+  border: none;
+}

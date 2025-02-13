@@ -1,0 +1,331 @@
+.container {
+  width: 100%;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+.box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact_box ul li {
+  width: 100%;
+}
+/* Logo */
+
+.logo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.logo a {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.logo i {
+  font-size: 16px;
+}
+
+.page_element {
+  margin-left: 15px;
+}
+
+.page_element div {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* Author */
+
+.container_content h2 {
+  margin-top: 50px;
+  margin-left: 0px !important;
+  text-align: left;
+}
+
+.container_content > :first-child h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.container_content > :first-child p {
+  font-size: 20px;
+}
+
+.container_content > :first-child h2,
+p {
+  text-align: start;
+  margin-left: 5%;
+}
+
+.container_content > :last-child ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 5%;
+  text-align: start;
+  width: 100%;
+}
+
+.container_content > :last-child ul li {
+  margin-top: 1px;
+  height: 70px;
+}
+
+/* pages logo and button */
+
+.pages_content {
+  margin-left: 0px !important;
+  padding: 0px !important;
+}
+
+.pages_content button {
+  margin-right: 200px;
+  margin-top: 20px;
+}
+
+.pages {
+  margin-right: 20px;
+}
+
+.table h6 {
+  border-radius: 15px;
+  font-size: 20px;
+  margin: 0px;
+  margin-block: 20px;
+}
+
+.table span {
+  color: black !important;
+}
+
+/* Skills */
+
+.skill_card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.skill_card h2 {
+  font-size: 50px;
+}
+
+.skill_card p {
+  font-size: 16px;
+}
+
+.skill_card div :first-child {
+  height: 20px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.skills_progress {
+  background: linear-gradient(to right, #6928e6, #973af1);
+}
+
+.skill_card {
+  transition: width 0.3s ease-in-out;
+}
+
+.grid_layout {
+  width: 97%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 սյուն */
+  gap: 10px; /* Տարածություն տողերի և սյուների միջև */
+  margin-top: 1%;
+}
+
+.inline_layout {
+  width: 19.7%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Resume */
+
+.timeline_container {
+  margin-top: 10px;
+  padding: 20px;
+
+  gap: 15px;
+}
+
+.timeline_section {
+  width: 45%;
+  background-color: #f4f6f8;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.timeline_section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline_item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.timeline_year {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-bottom: 5px;
+}
+
+.timeline_item h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.timeline_content {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 2px solid #6a1b9a;
+  margin-top: 5px;
+}
+
+.timeline_content h4 {
+  font-size: 16px;
+  color: #000;
+  margin: 0 0 5px;
+}
+
+.timeline_content p {
+  font-size: 14px;
+  color: #666;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  width: 2px;
+  /* height: 100%; */
+  background-color: #6a1b9a;
+}
+
+.timeline_item::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #6a1b9a;
+  border-radius: 50%;
+}
+
+/* Փոքր էկրանների համար (մինչև 520px) */
+
+@media (max-width: 1280px) {
+  .inline_layout {
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .inline_layout {
+    display: flex;
+    flex-direction: row !important;
+    width: 19.7%;
+  }
+}
+
+@media (max-width: 768px) {
+  .inline_layout {
+    flex-direction: column;
+    width: 100%;
+  }
+  .skill_card {
+    width: 100%;
+  }
+
+  .container_content button {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 519px) {
+  .container_content {
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  .content {
+    margin-top: -200px;
+  }
+
+  .page_element {
+    margin: 0px;
+  }
+
+  .container_content {
+    width: 100%;
+    margin-top: 250px;
+  }
+
+  .container_content h2 {
+    font-size: 70px !important;
+    text-align: start;
+    margin-top: 50px;
+  }
+
+  .timeline_container {
+    width: 100%;
+  }
+
+  .timeline_section {
+    width: 100%;
+  }
+
+  .contacts {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .contact_box {
+    width: 100%;
+  }
+
+  .container_content button {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .grid_layout {
+    grid-template-columns: repeat(1, 1fr); /* 2 սյուն */
+  }
+}
+
+@media (min-width: 376px) {
+  .container_content {
+    text-align: center;
+  }
+
+  .container_content h2 {
+    font-size: 20px;
+  }
+}

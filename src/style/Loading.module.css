@@ -1,0 +1,39 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95vh;
+  background-color: #1e0a48 !important;
+  position: relative;
+}
+
+/* Spinning Circle */
+.circlePart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  border-top-color: #ffffff;
+  border-right-color: #6928e6;
+  border-bottom-color: #973af1;
+  animation: spin 1.5s linear infinite;
+  position: absolute;
+}
+
+/* Text Styling */
+.loaderText {
+  color: #ffffff;
+  font-size: 1.2em;
+  text-align: center;
+  position: absolute;
+}

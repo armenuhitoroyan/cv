@@ -1,0 +1,675 @@
+.container {
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+.home2_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.context {
+  width: 48%;
+  margin-bottom: 10%;
+  background-color: rgb(0, 0, 95);
+  border-bottom-left-radius: 20%;
+  padding-bottom: 5%;
+  padding-top: 13%;
+  color: white;
+  padding-left: 2.5px;
+}
+
+.context img {
+  border-radius: 20px;
+  width: auto;
+  height: 80%;
+}
+
+.context h2 {
+  font-size: 50px;
+  text-align: start;
+}
+
+.context p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.info {
+  margin-left: 20px;
+}
+
+.user {
+  width: 52%;
+}
+
+/* Carousel */
+
+/* Հիմնական slide-ի style */
+
+/* Ensure the carousel container uses a flexbox layout */
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%; /* Adjust as needed */
+}
+
+/* The slide should have a horizontal layout */
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Prevent slides from shrinking */
+  transition: transform 0.3s ease-in-out;
+  width: 100%; /* This ensures each slide takes full width */
+}
+
+/* Optional: Set image to fill the slide container */
+.slideImage {
+  width: 100%;
+  height: auto; /* Adjust based on your image aspect ratio */
+  object-fit: cover;
+}
+
+/* Active slide style, if you want to add extra styling to the current slide */
+.active {
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Author info style */
+.author_info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+
+/* Portfolio Carousel */
+
+.author_info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Package */
+
+.package_card {
+  /* background: linear-gradient(to bottom right, #6a11cb, #2575fc); */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #000;
+}
+
+.package_card :hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.package p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.price {
+  width: 20%;
+  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+
+.skills {
+  color: #000 !important;
+  position: relative; /* կամ absolute, կամ fixed */
+  margin-top: 150px;
+  z-index: 5;
+}
+
+.creative {
+  width: 90%;
+  border-radius: 20px;
+  height: 400px;
+  color: white;
+  margin: 0 auto;
+}
+
+.creative h2 {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+.creative p {
+  font-size: 16px;
+  text-align: center !important;
+}
+.creative button {
+  margin-top: 20px;
+}
+
+/* Work Experience */
+
+.timelineContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: between;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: linear-gradient(to right, #e0eaff, #f6f0ff);
+  border-radius: 1rem;
+}
+
+.timelineContainer button {
+  height: 70px;
+  width: 70px;
+}
+
+.header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6c63ff;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  /* background-color: red; */
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.timelineLine {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 4px;
+  background-color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.timelinePoint {
+  width: 1rem;
+  height: 1rem;
+  background-color: #ccc;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timelinePoint.active {
+  background-color: #6c63ff;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* .next_preview_btn {
+  width: 100%;
+} */
+
+.titles {
+  width: 100%;
+  text-align: start;
+}
+
+.navButton {
+  font-size: 1.5rem;
+  background: none;
+  border: 2px solid #6c63ff;
+  cursor: pointer;
+  color: #6c63ff;
+  transition: color 0.3s ease;
+  width: 50px;
+}
+
+.navButton:hover {
+  color: #333;
+}
+
+.contentCard {
+  flex: 1;
+  padding: 1rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 1rem;
+}
+
+.yearRange {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6c63ff;
+  margin-bottom: 0.5rem;
+}
+
+.role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Services */
+.container section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.container section {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.container section h3 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 50px;
+  width: 50%;
+  height: 370px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.box1 {
+  width: 120px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 15px;
+  transform: rotate(90deg);
+}
+
+.box2 {
+  width: 120px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 2;
+  margin-top: -150px;
+  margin-left: 67px;
+  color: white;
+}
+
+.skill_info {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  text-align: start !important;
+  padding-left: 5%;
+}
+
+.skill_info a {
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skill_info a:hover {
+  text-decoration: underline;
+}
+
+.skill_info p {
+  font-size: 14px;
+  color: #808080;
+  margin: 0 auto;
+}
+
+.pricing {
+  padding-top: 200px;
+}
+
+.pricing p {
+  color: #808080;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.pricing h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  width: 100vw !important;
+  margin-left: 5%;
+}
+
+/* Media */
+
+@media screen and (max-width: 1024px) {
+  .context {
+    padding-top: 10%;
+    padding-bottom: 8%;
+    border-bottom-left-radius: 15%;
+  }
+
+  .card {
+    width: 70%;
+    height: auto;
+    padding: 40px;
+  }
+
+  .context h2 {
+    font-size: 40px;
+  }
+
+  .context p {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 45%;
+    height: 350px;
+    padding: 30px;
+  }
+
+  .box1,
+  .box2 {
+    width: 100px;
+    height: 120px;
+    margin-left: 15px;
+  }
+
+  .box2 {
+    margin-top: -120px;
+  }
+
+  .card h4 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+
+  .services {
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .context {
+    padding-top: 8%;
+    padding-bottom: 6%;
+    border-bottom-left-radius: 10%;
+  }
+
+  .home2_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 80%;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .carousel_img {
+    height: auto !important;
+  }
+
+  .boxes {
+    width: 100px;
+
+    margin: 0 auto;
+  }
+
+  .desc {
+    text-align: center !important;
+  }
+
+  .context {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .box {
+    justify-content: start !important ;
+    align-items: start !important;
+  }
+
+  .user {
+    width: 100%;
+    left: 0px;
+    margin-left: 0px;
+  }
+
+  .context h2 {
+    font-size: 35px;
+  }
+
+  .context p {
+    font-size: 13px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .box1,
+  .box2 {
+    width: 80px;
+    height: 100px;
+    margin-left: 10px;
+  }
+
+  .box2 {
+    margin-top: -100px;
+  }
+
+  .select_btn {
+    width: 100%;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.75rem;
+  }
+
+  .services {
+    gap: 1rem;
+  }
+  .footer {
+    width: 120vw !important;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 520) {
+  .home2_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .context {
+    width: 100%;
+  }
+
+  .user {
+    width: 100%;
+  }
+
+  .next_preview_btn button {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .context {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom-left-radius: 5%;
+  }
+
+  .box {
+    justify-content: start;
+    padding: 0px;
+  }
+
+  .user {
+    width: 100%;
+  }
+
+  .home2_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .context h2 {
+    font-size: 30px;
+  }
+
+  .context p {
+    font-size: 12px;
+  }
+
+  .container section {
+    padding: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .box1,
+  .box2 {
+    width: 60px;
+    height: 80px;
+    margin-left: 5px;
+  }
+
+  .box2 {
+    margin-top: -80px;
+  }
+
+  .card h4 {
+    font-size: 0.9rem;
+  }
+
+  .card p {
+    font-size: 0.7rem;
+  }
+
+  .services {
+    gap: 0.5rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .skill_info a {
+    font-size: 18px;
+  }
+
+  .skill_info p {
+    font-size: 12px;
+  }
+
+  .footer {
+    width: 100vw !important;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,241 @@
+.container {
+  width: 100%;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+.container .hading {
+  width: 100%;
+}
+
+.container .hading p {
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #555;
+  font-size: 20px;
+}
+
+.container .hading h2 {
+  font-size: 40px;
+  line-height: 50px;
+  color: black;
+  text-align: center;
+}
+
+.box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Map */
+
+.map_container {
+  height: 400px;
+  border-radius: 20px;
+}
+
+/* Add User Form */
+
+input,
+textarea,
+select {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  outline: none;
+  font-size: 16px;
+  height: 70px;
+  color: #ccc;
+  width: 100% !important;
+  margin-top: 20px;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+  padding-top: 10px;
+}
+
+.container select option {
+  background-color: white;
+  height: 50px !important;
+  color: #4219dc;
+}
+
+.container select option:hover {
+  background-color: #4219dc !important;
+  color: white;
+}
+
+.info {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Map */
+
+.map {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* Carousel */
+
+.carousel_container {
+  width: 90%;
+  margin: auto;
+}
+
+.carousel_container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contact Card */
+
+.contacts_container {
+  padding: 2%;
+}
+
+.contact_item {
+  background-color: #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  cursor: pointer;
+  height: 300px;
+  width: 80%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contact_item p {
+  margin: 0;
+  color: #808080;
+  text-align: center !important;
+}
+
+.contact_item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+}
+
+.contact_item {
+  position: relative;
+  padding-top: 15px;
+}
+
+.contact_item div:nth-child(1) {
+  background: #f8f9fa;
+  width: 120px;
+  height: 150px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  transform: rotate(90deg);
+  margin-top: 20px;
+}
+
+.contact_item div:nth-child(2) {
+  width: 120px;
+  height: 150px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 2;
+  top: 0; /* Ֆիքսված դիրք */
+  left: 50%; /* Ֆիքսված դիրք */
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Transition գույնի փոփոխության համար */
+}
+
+.icon {
+  color: #6610f2;
+  font-size: 40px;
+}
+
+/* Hover-ի ազդեցություն ամբողջ service-item-ի վրա */
+.contact_item:hover div:nth-child(2) {
+  background-color: #6610f2; /* Hover-ի ժամանակ գույնի փոփոխություն */
+  transition: color 0.3s ease;
+  color: #fff;
+}
+
+.contact_item:hover div:nth-child(1) {
+  background-color: #6610f2; /* Hover-ի ժամանակ գույնի փոփոխություն */
+  transition: color 0.3s ease;
+}
+
+.fa-icon {
+  font-size: 60px; /* Չափը */
+  color: #6610f2; /* Սկզբնական գույնը */
+  transform: rotate(-90deg); /* Ուղղությունը */
+  transition: color 0.3s ease; /* Գույնի փոփոխման անիմացիա */
+}
+
+/* Hover-ի ազդեցություն ամբողջ service-item-ի վրա */
+.contact_item:hover .fa-icon {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.contact_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 2%;
+}
+
+.contact_description {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+/*  form */
+.dropdown {
+  width: 100%;
+}
+
+.contacts {
+  width: 50%;
+  gap: 10px;
+}
+
+/* Media */
+/* Tablet (միջակայք 768px) */
+@media (max-width: 768px) {
+  .info {
+    width: 100%;
+    gap: 0px;
+  }
+
+  .contacts input {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .button {
+    width: 100%;
+  }
+
+  .button button {
+    width: 200px;
+  }
+
+  .contacts {
+    width: 100%;
+  }
+  .contacts input {
+    width: 100%;
+  }
+}

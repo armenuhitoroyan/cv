@@ -1,0 +1,606 @@
+/* Տառատեսակը */
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("../assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+@keyframes rotateAndResize {
+  0% {
+    width: 250px;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    width: 150px;
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    width: 150px;
+    transform: rotate(360deg);
+    opacity: 0; /* Hide the image */
+  }
+}
+
+@keyframes rotateAndResize {
+  0% {
+    width: 250px;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    width: 150px;
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    width: 150px;
+    transform: rotate(360deg);
+    opacity: 0; /* Hide the image */
+  }
+}
+
+.homepage {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+.context {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #333;
+}
+
+/* ContactCard.css */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #8b3eeb;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.icon {
+  background-color: #8b3eeb;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+
+.icon-content {
+  font-size: 24px;
+  color: white;
+}
+
+.texts {
+  width: 70%;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #333;
+}
+
+.email {
+  font-size: 14px;
+  color: #333;
+}
+
+.shaps_logo {
+  position: relative;
+  animation: rotateAndResize 5s infinite; /* Infinite loop */
+  transition: opacity 0.5s ease-out;
+}
+
+/* Card */
+
+.image_card {
+  position: relative;
+  width: 200px; /* Set width as needed */
+  height: 250px; /* Set height as needed */
+  /* overflow: hidden; */
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.image_card div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+.image_card:hover .image_card div {
+  opacity: 1;
+}
+
+.image_card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.image_card p {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+/*  */
+.content_wrapper {
+  height: 60vh;
+  width: 55%;
+  background: linear-gradient(45deg, #00005f, #7b2ff7);
+}
+
+.left_section {
+  width: 100px;
+  flex: 1;
+  color: #ffffff;
+  padding: 50px;
+  text-align: left;
+}
+.animation_box {
+  position: relative;
+  margin-inline-start: 55%;
+  z-index: 3;
+  width: 300px;
+  margin-top: -300px;
+}
+
+.content_wrapper h2 {
+  font-size: 65px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.content_wrapper p {
+  width: 70%;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+/* Card */
+.article_card_container {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* overflow: hidden; */
+  position: relative;
+  font-family: Arial, sans-serif;
+  margin: 10px;
+}
+
+.image_container {
+  position: relative;
+  height: 200px;
+  /* overflow: hidden; */
+}
+
+.image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comment_badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #fff;
+  color: #6a1b9a;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content p {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.content h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+}
+
+.content button {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: #fff;
+  color: #6a1b9a;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.content button:hover {
+  transform: scale(1.1);
+}
+
+.form {
+  background: linear-gradient(45deg, #f1d5fd, #cdcdfc);
+  padding: 20px;
+  width: 100%;
+  border-radius: 25px;
+  /* opacity: 0.8; */
+}
+
+.form p {
+  color: red !important;
+}
+
+.contacts div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact_with {
+  width: 40%;
+}
+
+.contacts_form {
+  width: 60%;
+}
+
+/* Header */
+
+.header_container {
+  margin: 0 auto;
+  background: linear-gradient(90deg, #00003d, #010060);
+  border-bottom-left-radius: 115%;
+  border-bottom-right-radius: 170%;
+  height: 80vh;
+}
+
+.box_content p {
+  color: white !important;
+}
+
+.box {
+  height: 450px;
+  color: white;
+  margin: 0px;
+}
+
+.box_content {
+  color: white;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-inline-start: 7%;
+  margin-block-end: 20%;
+  text-align: start;
+}
+
+.box_content h2 {
+  font-size: 30px;
+  text-align: start;
+  margin: 0px;
+  margin-top: 25%;
+}
+
+.box_content h1,
+p {
+  margin-top: 40px;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 60px;
+}
+
+.box_content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 12%;
+  margin-left: 8.5%;
+}
+
+.img {
+  border-radius: 50%;
+  width: 300px;
+  margin-top: 120px;
+  margin-right: 170px;
+}
+
+.follows_box {
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  top: 53%;
+  border-radius: 20px;
+  margin-inline-start: 35%;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+  z-index: 2;
+}
+
+.follows_box p {
+  color: black !important;
+  font-weight: bold;
+  line-height: 22px;
+  margin-top: -5%;
+  font-size: 17px !important;
+}
+
+.follows_box h2 {
+  color: #6928e6;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+.animation_container {
+  position: relative;
+  transform: none;
+  margin-top: -350px;
+  margin-left: 450px;
+  z-index: 20;
+}
+
+.shaps_logo {
+  position: relative;
+  animation: rotateAndResize 5s infinite linear;
+  transition: opacity 0.5s ease-out;
+}
+
+/* Media Queries */
+/* Մեծ էկրանների համար */
+
+@media (max-width: 1280) {
+  .homepage {
+    width: 100%;
+  }
+  .follows_box {
+    margin-left: 400px;
+  }
+
+  .circle {
+    margin: 0px;
+    margin-top: 250px;
+    margin-left: 250px;
+  }
+}
+
+/* Պլանշետների և ավելի փոքր աշխատասեղանների համար */
+@media (max-width: 1024px) {
+  .homepage {
+    width: 100%;
+  }
+  .header_container {
+    height: 80vh;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 150%;
+  }
+
+  .box_content h1 {
+    font-size: 50px;
+  }
+
+  .box_content p {
+    font-size: 18px;
+  }
+
+  .follows_box {
+    margin: 0px;
+    left: 400px;
+    top: 350px;
+  }
+
+  .img {
+    width: 250px;
+    margin-top: 100px;
+    margin-right: 100px;
+  }
+
+  .follows_box {
+    margin-inline-start: 25%;
+  }
+
+  .circle {
+    margin: 0px;
+    margin-top: 200px;
+    margin-left: 200px;
+  }
+}
+
+/* Պլանշետի */
+@media (max-width: 768px) {
+  .homepage {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .context {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header_container {
+    width: 100%;
+    height: 50vh;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 130%;
+  }
+
+  .box_content h1 {
+    font-size: 40px;
+  }
+
+  .box_content p {
+    font-size: 16px;
+  }
+
+  .img {
+    margin: 0px;
+    width: 300px;
+    margin-top: -200px;
+    margin-left: 350px;
+  }
+
+  .follows_box {
+    margin-inline-start: 20%;
+    margin-top: 50px;
+  }
+
+  .circle {
+    margin: 0 auto;
+    margin-top: 500px;
+  }
+
+  .article_card_container {
+    width: 100%;
+  }
+
+  .content {
+    text-align: center !important;
+  }
+
+  .infocard {
+    width: 100%;
+  }
+
+  .contact_with {
+    width: 100%;
+  }
+
+  .contacts_form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .homepage {
+    width: 100%;
+  }
+  .contact_with {
+    width: 100%;
+  }
+
+  .infocard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .homepage {
+    width: 100%;
+  }
+  .contact_with {
+    width: 100%;
+  }
+
+  .infocard {
+    width: 100%;
+  }
+}
+
+/* Հեռախոսների համար */
+/* @media (max-width: 480px) {
+  .header_container {
+    height: 70vh;
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 110%;
+  }
+
+  .box_content h1 {
+    font-size: 30px;
+  }
+
+  .box_content p {
+    font-size: 14px;
+  }
+
+  .follows_box {
+    margin-inline-start: 20%;
+    margin-top: 250px;
+  }
+
+  .circle {
+    margin: 0 auto;
+    margin-top: 500px;
+    margin-left: -50px;
+  }
+
+  .img {
+    margin: 0px;
+    width: 350px;
+    margin-top: -120px;
+    margin-left: 150px;
+  }
+
+  .follows_box {
+    margin-inline-start: 10%;
+    width: 150px;
+    height: 120px;
+  }
+
+  .follows_box h2 {
+    font-size: 30px;
+  }
+
+  .follows_box p {
+    font-size: 14px;
+  }
+} */

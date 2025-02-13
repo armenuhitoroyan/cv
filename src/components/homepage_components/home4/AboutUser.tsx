@@ -1,0 +1,46 @@
+import React from "react";
+import styles from "../../../style/Home4.module.css";
+
+interface AboutUserProps {
+  color: string;
+  onClick: void;
+}
+
+export const AboutUser: React.FC<AboutUserProps> = ({ color, onClick }) => {
+  return (
+    <div className={styles.user_container}>
+      {/* H2-ը տեղափոխում ենք սկիզբ */}
+
+      <div className="!text-left">
+        <h2
+          className="text-3xl font-bold"
+          style={{
+            WebkitTextStroke: `1px ${color}`,
+            marginLeft: "0px",
+          }}
+        >
+          HELLO I AM
+        </h2>
+      </div>
+      <h1 className="text-3xl font-bold">Tohidur Hasan</h1>
+      <p style={{ color: color }}>
+        Graphic Designer, HTML Coder, PHP Programmer and Project Manager
+      </p>
+      <div
+        className={`w-full flex flex-col lg:flex-row justify-between items-center ${styles.freelance_context}`}
+      >
+        <button
+          onClick={() => onClick}
+          className="bg-white text-purple-900 font-bold py-2 px-1 rounded-full "
+        >
+          Start consulting
+        </button>
+        <ul className="!mt-10">
+          <li>Available for Freelance</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default AboutUser;

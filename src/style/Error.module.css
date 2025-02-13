@@ -1,0 +1,208 @@
+.container {
+  width: 100%;
+  font-family: Sans-Serif;
+  text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #3c1f9f, #7a45c6);
+  color: white;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container > div:first-child {
+  text-align: center;
+  width: 60%;
+  height: 80vh;
+  padding: 40px 45px;
+  background: white;
+  border-radius: 30%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #333;
+  position: relative;
+  /* margin-bottom: 150px; */
+}
+
+.container h1 {
+  font-size: 13rem;
+  margin: 0;
+  color: black;
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.container span {
+  font-size: 160px;
+  margin-top: 70px;
+}
+
+.text {
+  text-align: center !important;
+}
+
+.error-icon {
+  font-size: 10rem;
+  margin: 20px 0;
+}
+
+.container p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-top: -1%;
+}
+
+.container h5 {
+  color: white;
+  margin-bottom: 20%;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+}
+
+.search input {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin-bottom: 50px;
+  margin-top: 5%;
+}
+
+.search button {
+  width: 50px;
+  height: 50px;
+  background: #7a45c6;
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 4;
+  margin-left: 82%;
+  margin-top: 6%;
+}
+
+.search button:hover {
+  background: #562d9f;
+}
+
+.search-icon {
+  font-size: 1rem;
+}
+
+.bg {
+  text-align: center;
+  width: 1100px;
+  height: 60vh;
+  border-radius: 20%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.9;
+  background-color: lightgray;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.error_context {
+  position: relative;
+  z-index: 10;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .container > div:first-child {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 80px;
+  }
+
+  .bg {
+    width: 500px;
+    height: 500px;
+    display: none;
+  }
+
+  .web_sites {
+    width: 60%;
+    margin: 0 auto !important;
+  }
+
+  .container h1 {
+    font-size: 6rem;
+  }
+
+  .container span {
+    font-size: 100px;
+  }
+
+  .container h2 {
+    font-size: 1.2rem;
+  }
+
+  .container p {
+    font-size: 0.9rem;
+  }
+
+  .search input {
+    padding: 12px;
+  }
+
+  .search button {
+    margin-left: 85%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .bg {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .container > div:first-child {
+    width: 100%;
+    height: 40vh;
+    padding: 15px;
+  }
+
+  .container h1 {
+    font-size: 5rem;
+  }
+
+  .container span {
+    font-size: 80px;
+  }
+
+  .container h2 {
+    font-size: 1rem;
+  }
+
+  .container p {
+    font-size: 0.8rem;
+  }
+
+  .search input {
+    padding: 10px;
+  }
+
+  .search button {
+    margin-left: 85%;
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,333 @@
+/* Տառատեսակը */
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+@keyframes rotateAndResize {
+  0% {
+    width: 300dvh;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    width: 250px;
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    width: 250px;
+    transform: rotate(360deg);
+    opacity: 0; /* Hide the image */
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(360deg); /* 7 վայրկյան արագ պտույտ */
+  }
+  85% {
+    transform: rotate(360deg); /* 2 վայրկյան դանդաղ պտույտ */
+  }
+  100% {
+    transform: rotate(360deg); /* 2 վայրկյան դադար */
+  }
+}
+
+@keyframes reverseRotateAnimation {
+  0% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: rotate(0deg); /* 7 վայրկյան արագ պտույտ հակառակ ուղղությամբ */
+  }
+  85% {
+    transform: rotate(0deg); /* 2 վայրկյան դանդաղ պտույտ հակառակ ուղղությամբ */
+  }
+  100% {
+    transform: rotate(0deg); /* 2 վայրկյան դադար */
+  }
+}
+
+.container {
+  width: 100%;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+.container ul li {
+  color: white;
+}
+
+/* Header */
+
+.header_container {
+  background: linear-gradient(45deg, #eecffc, #c8c8f9);
+  height: 95vh;
+}
+
+.box_content {
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-inline-start: 5%;
+  margin-block-end: 20%;
+  text-align: start;
+  margin-top: 25%;
+  height: 145px !important;
+}
+
+.box_content span {
+  font-weight: bold;
+  margin: 0px !important;
+}
+
+.box_content span,
+p {
+  color: #555 !important;
+}
+
+.box_content h2 {
+  font-size: 50px !important;
+  text-align: start;
+  margin: 0px !important;
+  margin-top: 25%;
+}
+
+.box_content h6 {
+  font-size: 20px;
+  margin: 0px !important;
+}
+
+.box_content h3 {
+  font-size: 400px;
+  position: absolute;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  left: 35%;
+  bottom: -1%;
+  z-index: 0;
+}
+
+.box_content a {
+  font-size: 26px;
+  color: #6928e6;
+  margin: 0px !important;
+  top: 20px !important;
+}
+
+.box_content h1,
+p {
+  /* margin-top: 40px; */
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0px !important;
+}
+
+.box_content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.img {
+  width: 600px !important;
+  margin: 0 auto !important;
+  margin-top: 100px !important;
+  margin-left: -200px !important;
+  position: absolute;
+  z-index: 4;
+}
+
+.dots {
+  position: relative;
+  width: 75%;
+  z-index: 3;
+  margin-top: 220px;
+  margin-left: 70px;
+  animation: rotateAnimation 11s linear infinite; /* 11 վայրկյան տևողություն */
+}
+
+.dots.reverse {
+  animation: reverseRotateAnimation 11s linear infinite; /* 11 վայրկյան տևողություն հակառակ ուղղությամբ */
+}
+
+.box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*  */
+
+.contct_box {
+  width: 100%;
+}
+
+.user_info img {
+  width: 70% !important;
+  border-radius: 20px !important;
+}
+
+.image_container :hover .image_container img {
+  transform: scale(1.2) rotate(10deg); /* Ավելացնում է ռոտացիա խոշորացման էֆեկտին */
+  cursor: pointer;
+}
+
+.contacts div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content button:hover {
+  transform: scale(1.1);
+}
+
+.contacts_with {
+  padding: auto;
+  width: 60%;
+}
+
+.info_card {
+  padding: auto;
+  width: 40%;
+}
+
+.form {
+  background: linear-gradient(45deg, #f1d5fd, #cdcdfc);
+  padding: 20px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.form p {
+  color: red !important;
+}
+
+.advice {
+  padding: 5%;
+  border: 3px solid #9539f0;
+  border-radius: 20px;
+  margin-top: 5%;
+}
+.advice h4 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.advice span {
+  color: black;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+.image_container {
+  width: 70px;
+  height: auto;
+  border-radius: 15px;
+  background-color: #9539f0;
+  padding: 30px;
+}
+
+.image_container img {
+  width: 50px !important;
+}
+
+.image_container h2 {
+  font-size: 26px !important;
+}
+
+/* Media */
+
+@media (min-width: 768px) {
+  .box {
+    width: 100%;
+  }
+
+  /* Հիմնական կոնտեյները */
+  .container {
+    width: 100%;
+    height: auto; /* Փոխարենը թույլ ենք տալիս բարձրությունը ավտոմատ սահմանվել */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* "A" տառը ջնջում ենք */
+  .a_text {
+    display: none;
+  }
+
+  /* Շրջանները (Circle icons) */
+  .circles {
+    display: flex;
+    justify-content: center; /* Տեղադրում ենք կենտրոնում */
+    margin-left: 0;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .circles div {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  /* Պրոֆիլի նկար */
+  .user_img {
+    margin: 0 auto !important; /* Կենտրոնացնում ենք */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* "Dots" անիմացիան */
+  .dots {
+    left: 0 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: rotateAnimation 8s linear infinite;
+  }
+
+  /* "Profile Image" բաժինը */
+  .profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .contacts_with {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .info_card {
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 520px) {
+  .contacts_with {
+    width: 100% !important;
+  }
+
+  .contacts_box {
+    background-color: blue !important;
+  }
+
+  .info_card {
+    width: 100% !important;
+  }
+
+  .contacts_box {
+    background-color: red !important;
+  }
+}

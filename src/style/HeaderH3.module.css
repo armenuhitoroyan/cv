@@ -1,0 +1,192 @@
+/* Տառատեսակը */
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+@keyframes rotateAndResize {
+  0% {
+    width: 300dvh;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    width: 250px;
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    width: 250px;
+    transform: rotate(360deg);
+    opacity: 0; /* Hide the image */
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(360deg); /* 7 վայրկյան արագ պտույտ */
+  }
+  85% {
+    transform: rotate(360deg); /* 2 վայրկյան դանդաղ պտույտ */
+  }
+  100% {
+    transform: rotate(360deg); /* 2 վայրկյան դադար */
+  }
+}
+
+@keyframes reverseRotateAnimation {
+  0% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: rotate(0deg); /* 7 վայրկյան արագ պտույտ հակառակ ուղղությամբ */
+  }
+  85% {
+    transform: rotate(0deg); /* 2 վայրկյան դանդաղ պտույտ հակառակ ուղղությամբ */
+  }
+  100% {
+    transform: rotate(0deg); /* 2 վայրկյան դադար */
+  }
+}
+
+.container {
+  margin: 0 auto;
+  background: linear-gradient(45deg, #eecffc, #c8c8f9);
+  height: 710px;
+}
+
+.a_text {
+  display: block;
+  font-size: 600px;
+  position: absolute;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  left: 700px;
+  top: 40px;
+  z-index: 0;
+}
+
+.circles {
+  margin-left: 90px;
+}
+
+.user_img {
+  display: block;
+  position: relative;
+  z-index: 4;
+  margin-right: 600px !important;
+}
+
+.dots {
+  position: relative;
+  width: 65%;
+  z-index: 3;
+  left: 800px !important;
+  animation: rotateAnimation 11s linear infinite; /* 11 վայրկյան տևողություն */
+}
+
+.dots.reverse {
+  animation: reverseRotateAnimation 11s linear infinite; /* 11 վայրկյան տևողություն հակառակ ուղղությամբ */
+}
+
+@media (max-width: 1280px) {
+  .home3 {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 720px;
+  }
+  .a_text {
+    font-size: 400px;
+    display: block;
+    left: 0px;
+    left: 450px;
+    top: 250px;
+  }
+
+  .user_img {
+    display: block;
+    margin-top: 150px;
+  }
+
+  .dots {
+    width: 70%;
+    left: 0px !important;
+    left: 600px !important;
+    top: 0px;
+    top: -50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home3 {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 700px;
+  }
+
+  .user_img {
+    margin-top: 200px;
+    left: 0px;
+    left: 70px;
+  }
+
+  .dots {
+    width: 70%;
+    left: 0px !important;
+    left: 600px !important;
+    top: 0px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home3 {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+  .a_text {
+    display: none;
+  }
+
+  .user_img {
+    display: none;
+  }
+
+  .dots {
+    width: 80%;
+    left: 0px !important;
+    left: 500px !important;
+    top: 0px;
+    top: -300px;
+  }
+}
+
+@media (max-width: 520px) {
+  .home3 {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .dots {
+    width: 80%;
+    left: 0px !important;
+    left: 250px !important;
+    top: 0px;
+    top: -300px;
+  }
+}

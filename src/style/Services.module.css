@@ -1,0 +1,168 @@
+/* Services */
+
+.container {
+  width: 100%;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+.context {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.context img {
+  margin: 0 auto;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 սյուն */
+  gap: 25px; /* Տարրերի միջև տարածություն */
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.container h3 {
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  color: #808080;
+}
+
+/* Sercices Details */
+
+.text_container {
+  width: 50%;
+  text-align: start;
+  padding: 40px;
+}
+
+.text_container p {
+  color: #808080;
+  margin-left: 10%;
+}
+
+.text_container h3,
+.rules h3 {
+  font-size: 32px;
+}
+
+.text_container h3 {
+  margin-left: 50px !important;
+}
+
+.rules {
+  width: 50%;
+  text-align: start;
+}
+
+.rules ul li {
+  list-style-type: square !important;
+  text-align: start !important;
+  padding-top: 14px;
+}
+
+.rules ul li::marker {
+  color: #6928e6 !important;
+}
+
+.rules ul li span {
+  color: #555 !important;
+  position: relative;
+  font-size: 16px;
+  width: 100% !important;
+}
+
+/* Rotating image */
+.image_container {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 15px;
+  /* overflow: hidden; */
+  position: relative;
+  transition: transform 0.5s ease;
+  box-shadow: 0.5s ease;
+}
+
+.image_container img {
+  border-radius: 20px;
+}
+
+.image_container span {
+  font-size: 15px;
+  color: lightgray;
+  font-weight: bold;
+}
+
+.image_container h2 {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.image_container p {
+  font-weight: unset;
+  color: lightgray;
+}
+
+.image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image_container :hover .image_container img {
+  transform: scale(1.2) rotate(12deg);
+  cursor: pointer;
+}
+
+.image_container:hover img {
+  transform: scale(1.2) rotate(12deg);
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr); /* 1 սյուն */
+  }
+
+  .rules,
+  .text_container {
+    width: 100%;
+  }
+
+  .text_container p,
+  .text_container h3 {
+    margin: 0px;
+  }
+
+  .info,
+  .info p,
+  .info h3 {
+    margin: 0px !important;
+  }
+
+  .image_context {
+    padding: 0px;
+  }
+
+  .image_container {
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+}

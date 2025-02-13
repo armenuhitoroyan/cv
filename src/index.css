@@ -1,0 +1,18 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    width: 100%;
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background: linear-gradient(90deg, #4219dc, #973af1);
+    color: white;
+    width: 40%;
+    height: 60px;
+    border-radius: 30px;
+    margin: 0px;
+  }
+}
