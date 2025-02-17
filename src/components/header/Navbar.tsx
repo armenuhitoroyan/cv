@@ -24,10 +24,13 @@ const Navbar = () => {
       }}
       className={`flex justify-center w-full fixed pt-10 pb-10 top-0 transition-all duration-300 ${styles.container}`}
     >
-      <div className="flex justify-between items-center w-full max-w-7xl px-10 py-2">
+      <div
+        className={`flex justify-between items-center w-full max-w-7xl  py-2 ${styles.navbar}`}
+      >
         {/* Logo Section */}
         <div>
           <Link to="/">
+            {/* // Եթե սքրոլ է արված կամ Home3 էջում է՝  սև գույնի նկարը լինի․․․ */}
             <img
               src={
                 location.pathname === "/index-2" ||

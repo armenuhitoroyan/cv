@@ -1,12 +1,17 @@
 @keyframes rotateAndResize {
+  /* Սկզբնական վիճակ (animation-ի 0%-ը) */
   0% {
-    transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1); /* Չկա պտույտ, չափսը նորմալ (1x) */
   }
+
+  /* Անիմացիայի միջնամաս (50%-ը) */
   50% {
-    transform: rotate(180deg) scale(0.5);
+    transform: rotate(180deg) scale(0.5); /* Պտտվում է 180 աստիճան և փոքրանում մինչև 50% */
   }
+
+  /* Վերջնական վիճակ (100%-ը) */
   100% {
-    transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1); /* Պտտվում է 360 աստիճան (ամբողջական պտույտ) և վերադառնում նորմալ չափսի */
   }
 }
 
@@ -96,7 +101,6 @@
   }
 
   .followers {
-
   }
 }
 

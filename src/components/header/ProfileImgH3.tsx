@@ -6,6 +6,8 @@ import styles from "../../style/HeaderH3.module.css";
 const ProfileImg3: React.FC = () => {
   const [reverse, setReverse] = useState(false);
 
+  // 11 վրկ պտտվում է, 2 վայրկյան դադար
+
   useEffect(() => {
     const interval = setInterval(() => {
       setReverse((prev) => !prev);
@@ -16,7 +18,7 @@ const ProfileImg3: React.FC = () => {
 
   return (
     <div className="relative flex justify-center items-center w-full top-40">
-      {/* Dots Image positioned behind */}
+      {/*  Հետնապատկերում պտտվող փոքր նկար */}
       <img
         className={`${styles.dots} ${
           reverse ? "reverse" : ""
@@ -25,7 +27,7 @@ const ProfileImg3: React.FC = () => {
         alt="Dots"
       />
 
-      {/* Profile Image */}
+      {/* Պրոֆիլի նկարը */}
       <img className={`${styles.user_img}`} src={profileImg} alt="User" />
     </div>
   );

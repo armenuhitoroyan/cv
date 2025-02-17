@@ -1,9 +1,6 @@
+import { LayoutProps } from "../interfaces/Types";
 import styles from "../style/About.module.css";
-import SkillCard from "./about_components/SkillCard";
-
-type LayoutProps = {
-  isGridLayout: boolean; // True -> Grid layout, False -> Inline layout
-};
+import Card from "./pages/about/Card";
 
 const Skills: React.FC<LayoutProps> = ({ isGridLayout }) => {
   const skills = [
@@ -18,7 +15,7 @@ const Skills: React.FC<LayoutProps> = ({ isGridLayout }) => {
       className={`${isGridLayout ? styles.grid_layout : styles.inline_layout}`}
     >
       {skills.map((item, index) => (
-        <SkillCard
+        <Card
           key={index}
           percentage={item.percentage}
           skill={item.skill}

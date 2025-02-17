@@ -3,10 +3,10 @@ import styles from "../../style/Portfolio.module.css";
 import bgImage from "../../assets/images/fog.png";
 import Footer from "../../components/footer/Footer";
 
-import PrevNextComponent from "../../components/portfolio_components/PrevNextComponent";
-import AboutPortfolio from "../../components/portfolio_components/AboutPortfolio";
+import PrevNextComponent from "../../components/portfolio/PrevNext";
+import AboutPortfolio from "../../components/portfolio/AboutPortfolio";
 
-import BrandCard from "../../components/portfolio_components/BrandCard";
+import Card from "../../components/portfolio/Card";
 import RotatingImage from "../../components/RotatingImage";
 import Header from "../../components/header/Header";
 import { useTitle } from "../../hooks/useTitle";
@@ -31,7 +31,7 @@ const Portfolio2: React.FC = () => {
             </h2>
 
             <div className=" text-start ">
-              <BrandCard
+              <Card
                 client="COMPANY"
                 category="Portfolio, Photos"
                 dateStart="December 10, 2021"

@@ -319,15 +319,7 @@ p {
     width: 100% !important;
   }
 
-  .contacts_box {
-    background-color: blue !important;
-  }
-
   .info_card {
     width: 100% !important;
-  }
-
-  .contacts_box {
-    background-color: red !important;
   }
 }

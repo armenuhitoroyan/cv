@@ -4,7 +4,7 @@ import bgImage from "../../assets/images/fog.png";
 import Footer from "../../components/footer/Footer";
 import Carousel from "../../components/Carousel";
 import AuthorInfo from "../../components/AuthorInformation";
-import ResumeComponent from "../../components/ResumeComponent";
+import ResumeComponent from "../../components/Resume";
 import Header from "../../components/header/Header";
 import { useTitle } from "../../hooks/useTitle";
 

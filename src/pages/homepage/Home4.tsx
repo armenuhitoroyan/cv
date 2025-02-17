@@ -1,8 +1,8 @@
-import { AboutUser } from "../../components/homepage_components/home4/AboutUser";
-import ProfileCard from "../../components/homepage_components/home4/ProfileCard";
-import { Sidebar } from "../../components/homepage_components/home4/Sidebar";
+import { AboutUser } from "../../components/homepage/home4/AboutUser";
+import Card from "../../components/homepage/home4/Card";
+import { Sidebar } from "../../components/homepage/home4/Sidebar";
 import { useTitle } from "../../hooks/useTitle";
-import Home4Props from "../../interface/Home4Props";
+import Home4Props from "../../interfaces/Home4Props";
 import styles from "../../style/Home4.module.css";
 
 const Home4: React.FC<Home4Props> = ({ color, backgroundColor, title }) => {
@@ -17,9 +17,8 @@ const Home4: React.FC<Home4Props> = ({ color, backgroundColor, title }) => {
           <Sidebar color={color} />
         </div>
         <AboutUser onClick={console.log("Something")} color={color} />
-        <ProfileCard />
+        <Card />
       </div>
-      {/* <div style={{ background: "red",  }}> */}
     </div>
   );
 };

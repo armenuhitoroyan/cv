@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../style/About.module.css";
 import Skills from "./Skills";
-import Pages from "./about_components/Pages";
+import Pages from "./pages/about/Pages";
 import Contacts from "./Contacts";
 
 const AuthorInfo: React.FC = () => {

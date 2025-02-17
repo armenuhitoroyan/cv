@@ -1,11 +1,6 @@
 import React from "react";
 import styles from "../style/Services.module.css";
-
-interface RotatingImageProps {
-  src: string;
-  width?: string;
-  height?: string;
-}
+import { RotatingImageProps } from "../interfaces/Types";
 
 const RotatingImage: React.FC<RotatingImageProps> = ({
   src,

@@ -3,14 +3,14 @@ import styles from "../../style/Blog.module.css";
 import bgImage from "../../assets/images/fog.png";
 import Footer from "../../components/footer/Footer";
 import Pagination from "../../components/Pagination";
-import EnterEmail from "../../components/blog_components/EnterEmail";
+import EnterEmail from "../../components/blog/EnterEmail";
 import { useTitle } from "../../hooks/useTitle";
-import Categories from "../../components/blog_components/Categories";
+import Categories from "../../components/blog/Categories";
 
-import Gallery from "../../components/blog_components/Gallery";
-import Link from "../../components/blog_components/Links";
-import RecentNews from "../../components/blog_components/News";
-import AboutAuthor from "../../components/blog_components/AboutAuthor";
+import Gallery from "../../components/blog/Gallery";
+import Links from "../../components/blog/Links";
+import RecentNews from "../../components/blog/News";
+import AboutAuthor from "../../components/blog/AboutAuthor";
 import Header from "../../components/header/Header";
 
 const OurBlog: React.FC = () => {
@@ -105,7 +105,7 @@ const OurBlog: React.FC = () => {
             <Categories />
 
             {/* Meta Links */}
-            <Link />
+            <Links />
 
             {/* Gallery Photos */}
             <Gallery />

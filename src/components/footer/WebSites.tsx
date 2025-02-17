@@ -1,11 +1,7 @@
 import React from "react";
 import styles from "../../style/Footer.module.css";
 import ListPages from "./ListPages";
-
-// Props-ի տիպերի սահմանում interface-ով
-interface WebPagesProps {
-  width: number;
-}
+import { WebPagesProps } from "../../interfaces/Types";
 
 const WebSites: React.FC<WebPagesProps> = ({ width }) => {
   return (

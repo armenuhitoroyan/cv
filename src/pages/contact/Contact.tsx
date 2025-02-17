@@ -5,9 +5,9 @@ import bgImage from "../../assets/images/home-2.jpg";
 import { useTitle } from "../../hooks/useTitle";
 
 import Footer from "../../components/footer/Footer";
-import Map from "../../components/contact_components/Map";
+import Map from "../../components/contact/Map";
 import Carousel from "../../components/Carousel";
-import ContactsCard from "../../components/contact_components/ContactsCard";
+import Contacts from "../../components/contact/Contacts";
 import UserForm from "../../components/form/UserForm";
 import Header from "../../components/header/Header";
 
@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
     <div className={`flex-col items-center justify-center ${styles.container}`}>
       <Header title="Contact" ref="concat" img={bgImage} />
       <div className={styles.box}>
-        <ContactsCard />
+        <Contacts />
         <div className={`flex items-center justify-center ${styles.map}`}></div>
         <div
           style={{ width: "100%" }}

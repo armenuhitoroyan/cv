@@ -1,11 +1,11 @@
 import AuthorInfo from "../../components/AuthorInformation";
 import Footer from "../../components/footer/Footer";
 import UserForm from "../../components/form/UserForm";
-import ArticleCard from "../../components/homepage_components/home1/ArticleCard";
-import InfoCard from "../../components/homepage_components/home1/InfoCard";
-import Works from "../../components/homepage_components/home1/Works";
-import ResumeComponent from "../../components/ResumeComponent";
-import ServicesComponent from "../../components/service_components/Services";
+import Card from "../../components/homepage/home1/Card";
+import InfoCard from "../../components/homepage/home1/InfoCard";
+import Works from "../../components/homepage/home1/Works";
+import ResumeComponent from "../../components/Resume";
+import ServicesComponent from "../../components/services/Services";
 import { HiMiniEnvelope, HiMiniMapPin, HiPhone } from "react-icons/hi2";
 import TitleContainer from "../../components/Title";
 import { useTitle } from "../../hooks/useTitle";
@@ -53,21 +53,21 @@ const Homepage: React.FC = () => {
         <div
           className={` ${styles.resent_articles} flex flex-col freelance-available justify-center items-center gap-10 lg:flex-row`}
         >
-          <ArticleCard
+          <Card
             image="https://afsu.tohidur.com/img/blog-1.jpg"
             commentBadge="12"
             dateAndUser="December 5, 2023 | John Smith"
             title="Interview Photographer Mark Seliger"
             description="Duis sed odio sit amet nibh vulputate cursus a sit Using an interactive app amet nibh roach."
           />
-          <ArticleCard
+          <Card
             image="https://afsu.tohidur.com/img/blog-2.jpg"
             commentBadge="22"
             dateAndUser="December 5, 2023 | John Smith"
             title="Professionals with a Global Mindset"
             description="Duis sed odio sit amet nibh vulputate cursus a sit Using an interactive app amet nibh roach."
           />
-          <ArticleCard
+          <Card
             image="https://afsu.tohidur.com/img/blog-3.jpg"
             commentBadge="12"
             dateAndUser="December 5, 2023 | John Smith"
@@ -80,21 +80,21 @@ const Homepage: React.FC = () => {
           <div className={`gap-5 pt-12 ${styles.contact_with}`}>
             <div>
               <InfoCard
-                IconComponent={HiPhone}
+                Icon={HiPhone}
                 title="Phone No"
                 text="+(123) 456 7890"
               />
             </div>
             <div className="mt-5">
               <InfoCard
-                IconComponent={HiMiniEnvelope}
+                Icon={HiMiniEnvelope}
                 title="Email Address"
                 text="username@domain.com"
               />
             </div>
             <div className="mt-5">
               <InfoCard
-                IconComponent={HiMiniMapPin}
+                Icon={HiMiniMapPin}
                 title="Location"
                 text="Block Street No 2101 USA"
               />

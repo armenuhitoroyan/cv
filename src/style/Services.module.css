@@ -86,10 +86,9 @@
   width: 90%;
   margin: 0 auto;
   border-radius: 15px;
-  /* overflow: hidden; */
   position: relative;
-  transition: transform 0.5s ease;
-  box-shadow: 0.5s ease;
+  transition: transform 0.5s ease; /* Ապահովում է հարթ (smooth) անցում `transform` հատկության համար՝ 0.5 վայրկյանում */
+  transition: box-shadow 0.5s ease; /* box-shadow հատկության փոփոխությունները կկատարվեն հարթ */
 }
 
 .image_container img {

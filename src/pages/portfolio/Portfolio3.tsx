@@ -2,11 +2,11 @@ import React from "react";
 import styles from "../../style/Portfolio.module.css";
 import bgImage from "../../assets/images/fog.png";
 import Footer from "../../components/footer/Footer";
-import PrevNextComponent from "../../components/portfolio_components/PrevNextComponent";
+import PrevNextComponent from "../../components/portfolio/PrevNext";
 import RotatingImage from "../../components/RotatingImage";
-import Information from "../../components/portfolio_components/Information";
+import Information from "../../components/portfolio/Information";
 
-import AboutPortfolio from "../../components/portfolio_components/AboutPortfolio";
+import AboutPortfolio from "../../components/portfolio/AboutPortfolio";
 import Header from "../../components/header/Header";
 import { useTitle } from "../../hooks/useTitle";
 

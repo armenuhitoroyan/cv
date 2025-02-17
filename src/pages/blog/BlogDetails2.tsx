@@ -3,12 +3,12 @@ import styles from "../../style/Blog.module.css";
 import bgImage from "../../assets/images/blog-detail.jpg";
 import Footer from "../../components/footer/Footer";
 import { useTitle } from "../../hooks/useTitle";
-import Advice from "../../components/blog_components/AdviceComponent";
+import Advice from "../../components/blog/Advice";
 import RotatingImage from "../../components/RotatingImage";
-import DesignPages from "../../components/blog_components/DesignPagesComponent";
-import PostedCard from "../../components/blog_components/blog_details_component/PostedCard";
-import AboutAuthorCard from "../../components/blog_components/blog_details_component/AboutAuthor";
-import AddComment from "../../components/blog_components/blog_details_component/AddCommentComponent";
+import DesignPages from "../../components/blog/DesignPages";
+import Card from "../../components/blog/blog_details/Card";
+import AboutAuthorCard from "../../components/blog/blog_details/AboutAuthor";
+import AddComment from "../../components/blog/blog_details/AddComment";
 import UserForm from "../../components/form/UserForm";
 import Header from "../../components/header/Header";
 
@@ -92,17 +92,14 @@ const BlogDetails2: React.FC = () => {
               className={`${styles.posted_card} flex flex-col justify-center items-center gap-10 lg:flex-row`}
             >
               <div>
-                <PostedCard
+                <Card
                   text="Whether you get knocked..."
                   content="Previous Post"
                 />
               </div>
 
               <div>
-                <PostedCard
-                  text="It’s whether you get up..."
-                  content="Next Post"
-                />
+                <Card text="It’s whether you get up..." content="Next Post" />
               </div>
             </div>
 

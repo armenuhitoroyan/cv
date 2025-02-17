@@ -1,23 +1,11 @@
 import React, { useState } from "react";
 import styles from "../../style/Contact.module.css";
+import { DataForm, ErrorsForm } from "../../interfaces/Types";
 
-interface FormData {
-  name: string;
-  email: string;
-  phone: string;
-  department: string;
-  message: string;
-}
-
-interface Errors {
-  name?: string;
-  email?: string;
-  phone?: string;
-  department?: string;
-}
+// Տվյալների մուտքագրում
 
 const UserForm: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState<DataForm>({
     name: "",
     email: "",
     phone: "",
@@ -25,10 +13,12 @@ const UserForm: React.FC = () => {
     message: "",
   });
 
-  const [errors, setErrors] = useState<Errors>({});
+  const [errors, setErrors] = useState<ErrorsForm>({});
+
+  // Տվյալների վալիդացիա
 
   const validateForm = (): boolean => {
-    const newErrors: Errors = {};
+    const newErrors: ErrorsForm = {};
 
     if (!formData.name) {
       newErrors.name = "Name is required";

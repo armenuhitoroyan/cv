@@ -28,12 +28,20 @@
   display: block;
 }
 
+.navbar {
+  padding-inline: 0px;
+}
+
 /* Media Queries */
 
 /* Հեռախոսների դեպքում */
 @media (max-width: 376px) {
   .container {
     width: 100%;
+  }
+
+  .navbar {
+    padding-inline: 50px;
   }
 }
 
@@ -48,11 +56,19 @@
     width: 50px;
     height: 50px;
   }
+
+  .navbar {
+    padding-inline: 50px;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
     width: 100%;
+  }
+
+  .navbar {
+    padding-inline: 70px;
   }
 }
 
@@ -74,6 +90,10 @@
   .download {
     width: 150px;
   }
+
+  .navbar {
+    padding-inline: 30px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -83,5 +103,9 @@
 
   .download {
     width: 150px;
+  }
+
+  .navbar {
+    padding-inline: 40px;
   }
 }

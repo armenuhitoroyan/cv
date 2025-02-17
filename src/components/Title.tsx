@@ -1,11 +1,7 @@
 import React from "react";
 import styles from "../style/Homepage.module.css";
+import { TitleContainerProps } from "../interfaces/Types";
 
-interface TitleContainerProps {
-  title: string;
-  description: string;
-}
-  
 const TitleContainer: React.FC<TitleContainerProps> = ({
   title,
   description,

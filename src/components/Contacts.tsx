@@ -1,12 +1,6 @@
 import React from "react";
 import styles from "../style/About.module.css";
-
-interface UserInfoProps {
-  data: string;
-  responseData: string;
-  style?: React.CSSProperties;
-  classname?: string;
-}
+import { UserInfoProps } from "../interfaces/Types";
 
 const UserInfo: React.FC<UserInfoProps> = ({
   data,

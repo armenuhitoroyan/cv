@@ -3,12 +3,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import styles from "../../style/Navbar.module.css";
 import { useScrolling } from "../../hooks/useScrolling";
-
-interface DropdownProps {
-  className?: string;
-  buttonLabel: string;
-  pages: { title: string; url: string; icon?: JSX.Element }[];
-}
+import { DropdownProps } from "../../interfaces/Types";
 
 const SingleDropdown = ({ buttonLabel, pages, className }: DropdownProps) => {
   const [open, setOpen] = useState(false);
@@ -43,7 +38,7 @@ const SingleDropdown = ({ buttonLabel, pages, className }: DropdownProps) => {
               location.pathname === "/index-3" || isScrolled
                 ? "black"
                 : "white",
-          }}
+          }} // // Եթե սքրոլ է արված կամ Home3 էջում է՝ գույնը  սև լինի․․․
         >
           {buttonLabel}
         </span>
@@ -54,7 +49,7 @@ const SingleDropdown = ({ buttonLabel, pages, className }: DropdownProps) => {
               location.pathname === "/index-3" || isScrolled
                 ? "black"
                 : "white",
-          }}
+          }} // // Եթե սքրոլ է արված կամ Home3 էջում է՝ գույնը  սև լինի․․․
         >
           {open ? <FaChevronUp /> : <FaChevronDown />}
         </span>

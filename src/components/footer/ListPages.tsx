@@ -1,17 +1,9 @@
 import React from "react";
 
 import styles from "../../style/Footer.module.css";
+import { ListPagesProps } from "../../interfaces/Types";
 
-// Props-ի տիպերի սահմանում interface-ով ListWebPages էջի համար
-
-interface ListWebPagesProps {
-  imageName: string;
-  webName: string;
-  bgColor: string;
-  href: string;
-}
-
-const ListPages: React.FC<ListWebPagesProps> = ({
+const ListPages: React.FC<ListPagesProps> = ({
   imageName,
   webName,
   bgColor,

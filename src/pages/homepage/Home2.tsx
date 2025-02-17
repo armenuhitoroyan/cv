@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "../../style/Home2.module.css";
-import OurServices from "../../components/homepage_components/home2/Service";
-import WorkExperience from "../../components/homepage_components/home2/WorkExperience";
+import OurServices from "../../components/homepage/home2/Service";
+import WorkExperience from "../../components/homepage/home2/WorkExperience";
 import { useTitle } from "../../hooks/useTitle";
-import AboutUser from "../../components/homepage_components/home4/AboutUser";
+import AboutUser from "../../components/homepage/home4/AboutUser";
 import TitleContainer from "../../components/Title";
 import RotatingImage from "../../components/RotatingImage";
 import bgImg from "../../assets/images/fog.png";
 import Footer from "../../components/footer/Footer";
 import Carousel from "../../components/Carousel";
-import PricingCard from "../../components/pages_components/pricing_plans_components/PricingCard";
-import PortfolioCarousel from "../../components/homepage_components/home2/PortfolioCarousel";
+import Card from "../../components/pages/pricing_plans/Card";
+import PortfolioCarousel from "../../components/homepage/home2/PortfolioCarousel";
 
 const Home2: React.FC = () => {
   useTitle("Home 2");
@@ -164,13 +164,13 @@ const Home2: React.FC = () => {
             style={{ width: "100%" }}
             className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4"
           >
-            <PricingCard
+            <Card
               marginTop="-40px"
               marginLeft="5%"
               widthBottom={100}
               widthTop={90}
             />
-            <PricingCard
+            <Card
               marginTop="-40px"
               marginLeft="5%"
               widthBottom={100}

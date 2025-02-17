@@ -1,20 +1,11 @@
 import React from "react";
 import styles from "../../style/Navbar.module.css";
-
-interface DownloadProps {
-  text: string;
-  href: string; // հղումը
-  download?: string; // ֆայլի անվանումը
-
-  color?: string;
-  width?: string;
-  height?: string;
-}
+import { DownloadProps } from "../../interfaces/Types";
 
 const Download: React.FC<DownloadProps> = ({
   text,
-  href,
-  download,
+  href, // Թղթապանակը, որի մեջ գտնվում է ֆայլը
+  download, // ֆայլի անունը
   width,
   height,
 

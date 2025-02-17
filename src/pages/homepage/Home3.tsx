@@ -1,10 +1,10 @@
 import Contacts from "../../components/Contacts";
 import Footer from "../../components/footer/Footer";
 import UserForm from "../../components/form/UserForm";
-import InfoCard from "../../components/homepage_components/home1/InfoCard";
-import Works from "../../components/homepage_components/home1/Works";
-import Card from "../../components/homepage_components/home3/Card";
-import ServicesComponent from "../../components/service_components/Services";
+import InfoCard from "../../components/homepage/home1/InfoCard";
+import Works from "../../components/homepage/home1/Works";
+import Card from "../../components/homepage/home3/Card";
+import ServicesComponent from "../../components/services/Services";
 import Skills from "../../components/Skills";
 import TitleContainer from "../../components/Title";
 import { HiMiniEnvelope, HiMiniMapPin, HiPhone } from "react-icons/hi2";
@@ -82,21 +82,21 @@ const Home3: React.FC = () => {
           >
             <div>
               <InfoCard
-                IconComponent={HiPhone}
+                Icon={HiPhone}
                 title="Phone No"
                 text="+(123) 456 7890"
               />
             </div>
             <div className="mt-5">
               <InfoCard
-                IconComponent={HiMiniEnvelope}
+                Icon={HiMiniEnvelope}
                 title="Email Address"
                 text="username@domain.com"
               />
             </div>
             <div className="mt-5">
               <InfoCard
-                IconComponent={HiMiniMapPin}
+                Icon={HiMiniMapPin}
                 title="Location"
                 text="Block Street No 2101 USA"
               />

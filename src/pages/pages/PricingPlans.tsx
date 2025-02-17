@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "../../style/PricingPlans.module.css";
-// import HeaderAll from "../../components/header/HeaderAll";
 import bgImage from "../../assets/images/fog.png";
 import Footer from "../../components/footer/Footer";
-import PricingCard from "../../components/pages_components/pricing_plans_components/PricingCard";
+import Card from "../../components/pages/pricing_plans/Card";
 import TitleContainer from "../../components/Title";
 import { useTitle } from "../../hooks/useTitle";
 import Header from "../../components/header/Header";
@@ -13,23 +12,22 @@ const PricingPlans: React.FC = () => {
   return (
     <div style={{ backgroundColor: "orange" }}>
       <div className={styles.menu}>
-        {/* <HeaderAll title="Pricing Plans" ref="pricing-plans" img={bgImage} /> */}
         <Header title="Pricing Plans" ref="pricing-plans" img={bgImage} />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
-        <PricingCard
+        <Card
           marginTop="-40px"
           marginLeft="5%"
           widthBottom={100}
           widthTop={90}
         />
-        <PricingCard
+        <Card
           marginTop="-40px"
           marginLeft="5%"
           widthBottom={100}
           widthTop={90}
         />
-        <PricingCard
+        <Card
           marginTop="-40px"
           marginLeft="5%"
           widthBottom={100}
@@ -54,7 +52,7 @@ const PricingPlans: React.FC = () => {
       </div>
       <div className="flex flex-col justify-center items-center lg:flex-row">
         <div style={{ width: "100%" }}>
-          <PricingCard
+          <Card
             marginLeft="70%"
             marginTop="-30%"
             widthBottom={60}
@@ -64,7 +62,7 @@ const PricingPlans: React.FC = () => {
           />
         </div>
         <div style={{ width: "100%" }}>
-          <PricingCard
+          <Card
             marginLeft="70%"
             marginTop="-30%"
             widthBottom={60}

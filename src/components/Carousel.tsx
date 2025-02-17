@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,14 +17,15 @@ const images = [
 
 const Carousel: React.FC = () => {
   const settings = {
-    dots: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
+    dots: false, // Չի ցուցադրում նավիգացիոն կետեր (dots)
+    speed: 500, // Անիմացիայի արագությունը (500 միլիվայրկյան)
+    slidesToShow: 3, // Միաժամանակ ցուցադրվող սլայդների քանակը (3 հատ)
+    slidesToScroll: 1, // Քանի սլայդ է տեղափոխվում մեկ քայլում (1 հատ)
+    infinite: true, // Անսահման պտույտ (loop)՝ հասնելով վերջը, նորից սկսում է սկզբից
+    autoplay: true, // Ինքնաշխատ պտույտ (slide-երը շարժվում են ավտոմատ)
+    autoplaySpeed: 1000, // Յուրաքանչյուր սլայդի ցուցադրման տևողությունը (1000 միլիվայրկյան = 1 վայրկյան)
   };
+
   return (
     <div className={`relative max-w-6xl mx-auto overflow-hidden p-2`}>
       <Slider {...settings}>

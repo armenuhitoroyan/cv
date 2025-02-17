@@ -57,7 +57,7 @@ export const DropdownMenu = () => {
         className={` block pt-4 text-xl ${styles.contact}`}
         style={{
           color:
-            location.pathname === "/index-3" || isScrolled ? "black" : "white",
+            location.pathname === "/index-3" || isScrolled ? "black" : "white",  // Եթե սքրոլ է արված կամ Home3 էջում է՝ գույնը  սև լինի․․․
         }}
       >
         Contact
