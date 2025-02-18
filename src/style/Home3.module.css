@@ -246,6 +246,9 @@ p {
 /* Media */
 
 @media (min-width: 768px) {
+  .home3 {
+    width: 100%;
+  }
   .box {
     width: 100%;
   }

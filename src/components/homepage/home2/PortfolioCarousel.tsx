@@ -74,10 +74,7 @@ const PortfolioCarousel: React.FC = () => {
               alt={`Slide ${index + 1}`}
               style={{ borderRadius: "20px", width: "auto", height: "300px" }}
             />
-            <div
-              style={{ background: "red", color: "green" }}
-              className={styles.author_info}
-            >
+            <div className={styles.author_info}>
               <span>{slide.date}</span>
               <span>{slide.author}</span>
               <h5>{slide.description}</h5>

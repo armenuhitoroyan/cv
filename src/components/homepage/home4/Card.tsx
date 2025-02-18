@@ -17,7 +17,7 @@ export const Card: React.FC = () => {
         <p className={styles.role}>
           Graphic Designer, HTML Coder, and Project Manager
         </p>
-        <div className={styles.button}>
+        <div className={`${styles.button} flex justify-center`}>
           <Download
             text="Download CV"
             href="/files/Armenuhi Toroyan CV.pdf"

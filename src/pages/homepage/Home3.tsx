@@ -21,7 +21,7 @@ const Home3: React.FC = () => {
         <div className="mt-10">
           <TitleContainer title="Who I am" description="About My Resume" />
         </div>
-        <div className="flex flex-col   lg:flex-row pt-1">
+        <div className="flex flex-col px-10 lg:flex-row pt-1">
           <div className={styles.contct_box}>
             <Contacts />
           </div>
@@ -34,7 +34,7 @@ const Home3: React.FC = () => {
             />
           </div>
         </div>
-        <div className="mt-10">
+        <div className={`mt-10 px-10 ${styles.skill_box}`}>
           <Skills isGridLayout={false} />
         </div>
         <div className="mt-20">

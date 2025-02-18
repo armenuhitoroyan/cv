@@ -9,8 +9,10 @@ const AuthorInfo: React.FC = () => {
     <div
       className={`${styles.container_content} w-full  flex-col items-center justify-center lg:flex-row`}
     >
-      <div className="w-full flex flex-col items-center justify-center lg:flex-row">
-        <div className={` w-full flex-col items-center  lg:flex-row`}>
+      <div className=" flex flex-col items-center justify-center lg:flex-row">
+        <div
+          className={`${styles.about_me}   flex-col items-center  lg:flex-row`}
+        >
           <div>
             <h2>About Me</h2>
           </div>
@@ -19,10 +21,10 @@ const AuthorInfo: React.FC = () => {
           </div>
           <div className="flex flex-col items-center justify-start  lg:flex-row">
             <div
-              className={` ${styles.pages_content} w-full flex  mt-10 flex-col items-center justify-start  lg:flex-row`}
+              className={` ${styles.pages_content} flex  mt-10 flex-col items-center justify-start  lg:flex-row`}
             >
               <div
-                className={`${styles.button} w-full flex flex-col justify-start items-center`}
+                className={`${styles.button}  flex flex-col justify-start items-center`}
               >
                 <button className="bg-white font-bold py-2 px-4 rounded-full  hover:bg-gray-100 transition">
                   Select Now
@@ -36,7 +38,7 @@ const AuthorInfo: React.FC = () => {
         </div>
 
         <div
-          className={`w-full flex-col items-center justify-center lg:flex-row`}
+          className={`w-full flex-col items-center justify-center lg:flex-row ${styles.about_worker}`}
         >
           <div>
             <p style={{ color: "#808080" }}>

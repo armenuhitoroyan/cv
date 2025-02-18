@@ -12,12 +12,16 @@ const Home4: React.FC<Home4Props> = ({ color, backgroundColor, title }) => {
       style={{ backgroundColor: backgroundColor, width: "100%" }}
       className={`${styles.container} w-full flex flex-col lg:flex-row  `}
     >
-      <div className="flex !p-0">
+      <div className={`flex flex-col !p-0 lg:flex-row ${styles.container_box}`}>
         <div className="!m-0">
           <Sidebar color={color} />
         </div>
-        <AboutUser onClick={console.log("Something")} color={color} />
-        <Card />
+        <div className={styles.about_user}>
+          <AboutUser onClick={console.log("Something")} color={color} />
+        </div>
+        <div className={styles.card_container}>
+          <Card />
+        </div>
       </div>
     </div>
   );

@@ -17,8 +17,8 @@ const ProfileImg: React.FC = () => {
       />
 
       {/* Overlay Elements */}
-      <div className="absolute top-5 left-5 z-10">
-        <Circle className="w-[70px] h-[70px] text-yellow-500" />
+      <div className={`absolute top-5 left-5 z-10 `}>
+        <Circle className={`text-yellow-500 ${styles.circle}`} />
       </div>
       <div className="absolute bottom-0 right-0 sm:right-2 md:right-4 z-20">
         <Animation />

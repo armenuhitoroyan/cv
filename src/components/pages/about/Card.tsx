@@ -40,13 +40,19 @@ const Card: React.FC<SkillCardProps> = ({
         isGridLayout ? styles.grid_layout : styles.inline_layout // 1 կամ 2 տողով ցուցադրելու համար
       }`}
     >
-      <h2 className="text-3xl font-bold">{progress}%</h2>
-      <p>{skill}</p>
-      <div style={{ width: "100%", height: "100%" }}>
-        <div
-          className={styles.skills_progress}
-          style={{ width: `${progress}%`, background: "#6928e6" }}
-        ></div>
+      <div style={{ width: "100%" }}>
+        <div style={{ width: "100%", height: "50px" }} className="flex gap-10">
+          <h2 style={{ width: "35%" }} className="text-3xl font-bold mb-10">
+            {progress}%
+          </h2>
+          <p style={{ width: "65%" }}>{skill}</p>
+        </div>
+        <div>
+          <div
+            className={styles.skills_progress}
+            style={{ width: `${progress}%`, background: "#6928e6" }}
+          ></div>
+        </div>
       </div>
     </div>
   );

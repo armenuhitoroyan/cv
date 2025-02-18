@@ -8,12 +8,16 @@
   font-family: Sans-Serif;
   text-align: center;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   padding-block: 20px;
 }
 
 .container body {
   overflow: hidden;
+}
+
+.container_box {
+  margin: 0 auto !important;
 }
 
 .sidebar {
@@ -181,97 +185,94 @@ p {
   background-color: #eee;
 }
 
+@media (max-width: 1280px) {
+  .container {
+    height: 90vh;
+  }
+
+  .card {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .card .button {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .card_container {
+    padding-left: 100px;
+  }
+
+  .card .button {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    height: 95vh;
+  }
+
+  .card_container {
+    padding-left: 50px;
+  }
+
+  .card .button {
+    width: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 100%;
+    height: 100%;
     text-align: center !important;
     margin: 0 auto;
     padding: 0 auto;
   }
 
-  .box {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .user {
-    width: 100%;
-    order: 2; /* փոխում է դիվերի հերթականությունը */
-  }
-
-  .context {
-    width: 100%;
-    order: 1; /* փոխում է դիվերի հերթականությունը */
-    margin-bottom: 0;
-  }
-
-  .user_container {
-    margin-left: 0px;
-  }
-
-  .user_container h1,
-  h2,
-  p {
-    text-align: center !important;
-  }
-
-  .user_container ul {
-    padding: 0%;
-    margin: 0%;
-  }
-
-  .sidebar {
-    visibility: hidden;
+  .about_user {
+    width: 80%;
+    margin-top: -600px;
+    margin-left: 70px;
   }
 
   .card {
+    width: 100%;
     margin: 0 auto;
-    /* visibility: hidden; */
+    margin-top: 50px;
+  }
+
+  .card .button {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 520px) {
   .container {
     width: 100%;
-    text-align: center !important;
+    height: 100%;
     margin: 0 auto;
     padding: 0 auto;
+    padding: 5px;
   }
 
-  .user_container h1,
-  p {
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .user_container p {
-    font-weight: normal;
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .user_container h2 {
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: -200px;
-  }
-
-  .user_container ul {
-    padding: 0%;
-    margin: 0%;
-  }
-
-  .user_container button {
-    width: 200px;
-  }
-
-  .sidebar {
-    visibility: hidden;
+  .about_user {
+    width: 75%;
+    margin-left: 50px;
   }
 
   .card {
+    width: 88%;
+  }
+
+  .card .button {
+    width: 100%;
     margin: 0 auto;
-    /* visibility: hidden; */
   }
 }
