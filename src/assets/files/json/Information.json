@@ -1,0 +1,11 @@
+[
+  { "data": "Age:", "responseData": " 29" },
+  { "data": "Residence:", "responseData": " USA" },
+  {
+    "data": "Address:",
+    "responseData": " 88 Some Street, Some Town"
+  },
+  { "data": "E-mail:", "responseData": " email@example.com" },
+  { "data": "Phone:", "responseData": " +0123 123 456 789" },
+  { "data": "Freelance:", "responseData": " Available" }
+]

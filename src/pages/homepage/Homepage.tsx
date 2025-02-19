@@ -110,6 +110,7 @@ const Homepage: React.FC = () => {
             <UserForm />
           </div>
         </div>
+        <div className="mt-20"></div>
       </div>
       <Footer />
     </div>

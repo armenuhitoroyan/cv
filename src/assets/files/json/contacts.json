@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "FaPhone",
+    "title": "Phone Number",
+    "description": "+(123) 456 7890"
+  },
+  {
+    "icon": "FaVoicemail",
+    "title": "Email Address",
+    "description": "Admin@example.com"
+  },
+  {
+    "icon": "FaLocationArrow",
+    "title": "Office Location",
+    "description": "123 New York E Block 12670, Street 2101."
+  }
+]

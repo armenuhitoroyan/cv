@@ -1,6 +1,6 @@
 // User-ի, Service-ների տվյալները
 interface Data {
-  icon: JSX.Element;
+  icon: React.ElementType; // JSX.Element-ի փոխարեն օգտագործել React.ElementType
   title: string;
   description: string;
 }

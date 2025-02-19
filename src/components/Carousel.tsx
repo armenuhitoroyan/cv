@@ -1,19 +1,9 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Images from "../assets/files/json/Images.json";
 
-const images = [
-  { src: "https://afsu.tohidur.com/img/clients-img-1.png", alt: "Client 1" },
-  { src: "https://afsu.tohidur.com/img/clients-img-2.png", alt: "Client 2" },
-  { src: "https://afsu.tohidur.com/img/clients-img-3.png", alt: "Client 3" },
-  { src: "https://afsu.tohidur.com/img/clients-img-4.png", alt: "Client 4" },
-  { src: "https://afsu.tohidur.com/img/clients-img-5.png", alt: "Client 5" },
-  { src: "https://afsu.tohidur.com/img/clients-img-1.png", alt: "Client 1" },
-  { src: "https://afsu.tohidur.com/img/clients-img-2.png", alt: "Client 2" },
-  { src: "https://afsu.tohidur.com/img/clients-img-3.png", alt: "Client 3" },
-  { src: "https://afsu.tohidur.com/img/clients-img-4.png", alt: "Client 4" },
-  { src: "https://afsu.tohidur.com/img/clients-img-5.png", alt: "Client 5" },
-];
+const images = Images;
 
 const Carousel: React.FC = () => {
   const settings = {

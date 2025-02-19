@@ -1,85 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import RotatingImage from "../../RotatingImage";
-
-const images = [
-  {
-    id: 1,
-    src: "profile-1",
-    category: "branding",
-    title: "Branding 1",
-    description: "A creative branding concept.",
-  },
-  {
-    id: 2,
-    src: "profile-2",
-    category: "development",
-    title: "Development 1",
-    description: "A web development showcase.",
-  },
-  {
-    id: 3,
-    src: "profile-3",
-    category: "branding",
-    title: "Branding 2",
-    description: "Modern branding design.",
-  },
-  {
-    id: 4,
-    src: "showcase-3",
-    category: "showcase",
-    title: "Showcase 1",
-    description: "Innovative design ideas.",
-  },
-  {
-    id: 5,
-    src: "showcase-4",
-    category: "showcase",
-    title: "Showcase 2",
-    description: "Minimalistic showcase example.",
-  },
-  {
-    id: 6,
-    src: "showcase-5",
-    category: "design",
-    title: "Design 1",
-    description: "Creative UI/UX design.",
-  },
-  {
-    id: 7,
-    src: "showcase-6",
-    category: "ui/ux",
-    title: "UI/UX 1",
-    description: "Professional UI design.",
-  },
-  {
-    id: 8,
-    src: "showcase-8",
-    category: "development",
-    title: "Development 2",
-    description: "Backend API integration.",
-  },
-  {
-    id: 9,
-    src: "showcase-1",
-    category: "ui/ux",
-    title: "UI/UX 2",
-    description: "Frontend development concepts.",
-  },
-];
-
-const categories = [
-  { id: "all", label: "Show All" },
-  { id: "design", label: "Design" },
-  { id: "branding", label: "Branding" },
-  { id: "development", label: "Development" },
-  { id: "ui/ux", label: "UI/UX Design" },
-];
+import Designs from "../../../assets/files/json/Designs.json";
+import Categories from "../../../assets/files/json/Categories.json";
 
 export const Works: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const filteredImages = images.filter((image) => {
+  const filteredImages = Designs.filter((image) => {
     if (activeCategory === "all") return true; // ցույց տա բոլոր նկարները
     if (activeCategory === "design") return image.category === "showcase"; // միայն showcase ֆոլդըրի նկարները
     if (activeCategory === "branding") return image.id === 1 || image.id === 3; // 1-ին և 3-րդ նկարները
@@ -92,7 +20,7 @@ export const Works: React.FC = () => {
     <div>
       {/* Radio input-ներ */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-6 ">
-        {categories.map((category) => (
+        {Categories.map((category) => (
           <label
             key={category.id}
             className="flex  items-center gap-2 cursor-pointer"
@@ -116,7 +44,6 @@ export const Works: React.FC = () => {
           </label>
         ))}
       </div>
-
       {/* Նկարներ */}
       <div className={`grid grid-cols-1 lg:grid-cols-3 gap-4 `}>
         {filteredImages.map((image) => (

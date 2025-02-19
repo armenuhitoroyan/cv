@@ -1,29 +1,8 @@
 import { useState } from "react";
 import styles from "../../../style/Home2.module.css";
+import TimeLineData from "../../../assets/files/json/TimeLineData.json";
 
-const timelineData = [
-  {
-    yearRange: "2018 to Present",
-    role: "Graphic Designer",
-    company: "Company",
-    description:
-      "Lorem ipsum indolor st amet, cmetc ur locing elit, sedi dinm indolo sum ind ol m indolor st amet, cmetcilmes.",
-  },
-  {
-    yearRange: "2016 to 2018",
-    role: "Graphic Designer",
-    company: "Company",
-    description:
-      "Lorem ipsum indolor st amet, cmetc ur locing elit, sedi dinm indolo sum ind ol m indolor st amet, cmetcilmes.",
-  },
-  {
-    yearRange: "2014 to 2016",
-    role: "Graphic Designer",
-    company: "Company",
-    description:
-      "Lorem ipsum indolor st amet, cmetc ur locing elit, sedi dinm indolo sum ind ol m indolor st amet, cmetcilmes.",
-  },
-];
+const timelineData = TimeLineData;
 
 const WorkExperience = () => {
   // Ստեղծում ենք state փոփոխական, որը պահում է ընթացիկ ակտիվ ինդեքսը (սկզբում՝ 0)

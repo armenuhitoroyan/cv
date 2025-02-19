@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "src": "profile-1",
+    "category": "branding",
+    "title": "Branding 1",
+    "description": "A creative branding concept."
+  },
+  {
+    "id": 2,
+    "src": "profile-2",
+    "category": "development",
+    "title": "Development 1",
+    "description": "A web development showcase."
+  },
+  {
+    "id": 3,
+    "src": "profile-3",
+    "category": "branding",
+    "title": "Branding 2",
+    "description": "Modern branding design."
+  },
+  {
+    "id": 4,
+    "src": "showcase-3",
+    "category": "showcase",
+    "title": "Showcase 1",
+    "description": "Innovative design ideas."
+  },
+  {
+    "id": 5,
+    "src": "showcase-4",
+    "category": "showcase",
+    "title": "Showcase 2",
+    "description": "Minimalistic showcase example."
+  },
+  {
+    "id": 6,
+    "src": "showcase-5",
+    "category": "design",
+    "title": "Design 1",
+    "description": "Creative UI/UX design."
+  },
+  {
+    "id": 7,
+    "src": "showcase-6",
+    "category": "ui/ux",
+    "title": "UI/UX 1",
+    "description": "Professional UI design."
+  },
+  {
+    "id": 8,
+    "src": "showcase-8",
+    "category": "development",
+    "title": "Development 2",
+    "description": "Backend API integration."
+  },
+  {
+    "id": 9,
+    "src": "showcase-1",
+    "category": "ui/ux",
+    "title": "UI/UX 2",
+    "description": "Frontend development concepts."
+  }
+]

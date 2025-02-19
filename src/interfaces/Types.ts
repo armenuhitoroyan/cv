@@ -36,6 +36,14 @@ export interface CountFollwersProps {
   count: number;
 }
 
+export interface Images {
+  id: number;
+  src: string;
+  category: string;
+  title: string;
+  description: string;
+}
+
 // InfoCard-ի տվյալների տիպերը
 export type InfoCardProps = {
   Icon?: React.FC<React.SVGProps<SVGSVGElement>>;
@@ -54,6 +62,13 @@ export interface SlideData {
   date: string;
   author: string;
   description: string;
+}
+
+export interface Service {
+  title: string;
+  description: string;
+  icon: string; // Այստեղ icon-ը string է, հետո map-ով կանվանափոխենք
+  bgColor: string;
 }
 
 /**

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Graphics Design",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "icon": "Layers",
+    "bgColor": "#6de643"
+  },
+  {
+    "title": "Design Tools",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "icon": "PenTool",
+    "bgColor": "#f39b01"
+  },
+  {
+    "title": "Stunning Design",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "icon": "Smartphone",
+    "bgColor": "#e643ae"
+  },
+  {
+    "title": "Project Management",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "icon": "Cloud",
+    "bgColor": "#436de6"
+  }
+]

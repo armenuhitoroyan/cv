@@ -1,0 +1,265 @@
+{
+  "contacts": [
+    {
+      "icon": "FaPhone",
+      "title": "Phone Number",
+      "description": "+(123) 456 7890"
+    },
+    {
+      "icon": "FaVoicemail",
+      "title": "Email Address",
+      "description": "Admin@example.com"
+    },
+    {
+      "icon": "FaLocationArrow",
+      "title": "Office Location",
+      "description": "123 New York E Block 12670, Street 2101."
+    }
+  ],
+  "categories": [
+    { "id": "all", "label": "Show All" },
+    { "id": "design", "label": "Design" },
+    { "id": "branding", "label": "Branding" },
+    { "id": "development", "label": "Development" },
+    { "id": "ui/ux", "label": "UI/UX Design" }
+  ],
+  "designs": [
+    {
+      "id": 1,
+      "src": "profile-1",
+      "category": "branding",
+      "title": "Branding 1",
+      "description": "A creative branding concept."
+    },
+    {
+      "id": 2,
+      "src": "profile-2",
+      "category": "development",
+      "title": "Development 1",
+      "description": "A web development showcase."
+    },
+    {
+      "id": 3,
+      "src": "profile-3",
+      "category": "branding",
+      "title": "Branding 2",
+      "description": "Modern branding design."
+    },
+    {
+      "id": 4,
+      "src": "showcase-3",
+      "category": "showcase",
+      "title": "Showcase 1",
+      "description": "Innovative design ideas."
+    },
+    {
+      "id": 5,
+      "src": "showcase-4",
+      "category": "showcase",
+      "title": "Showcase 2",
+      "description": "Minimalistic showcase example."
+    },
+    {
+      "id": 6,
+      "src": "showcase-5",
+      "category": "design",
+      "title": "Design 1",
+      "description": "Creative UI/UX design."
+    },
+    {
+      "id": 7,
+      "src": "showcase-6",
+      "category": "ui/ux",
+      "title": "UI/UX 1",
+      "description": "Professional UI design."
+    },
+    {
+      "id": 8,
+      "src": "showcase-8",
+      "category": "development",
+      "title": "Development 2",
+      "description": "Backend API integration."
+    },
+    {
+      "id": 9,
+      "src": "showcase-1",
+      "category": "ui/ux",
+      "title": "UI/UX 2",
+      "description": "Frontend development concepts."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://afsu.tohidur.com/img/clients-img-1.png",
+      "alt": "Client 1"
+    },
+    {
+      "src": "https://afsu.tohidur.com/img/clients-img-2.png",
+      "alt": "Client 2"
+    },
+    {
+      "src": "https://afsu.tohidur.com/img/clients-img-3.png",
+      "alt": "Client 3"
+    },
+    {
+      "src": "https://afsu.tohidur.com/img/clients-img-4.png",
+      "alt": "Client 4"
+    },
+    {
+      "src": "https://afsu.tohidur.com/img/clients-img-5.png",
+      "alt": "Client 5"
+    },
+    {
+      "src": "https://afsu.tohidur.com/img/clients-img-1.png",
+      "alt": "Client 1"
+    },
+    {
+      "src": "https://afsu.tohidur.com/img/clients-img-2.png",
+      "alt": "Client 2"
+    },
+    {
+      "src": "https://afsu.tohidur.com/img/clients-img-3.png",
+      "alt": "Client 3"
+    },
+    {
+      "src": "https://afsu.tohidur.com/img/clients-img-4.png",
+      "alt": "Client 4"
+    },
+    {
+      "src": "https://afsu.tohidur.com/img/clients-img-5.png",
+      "alt": "Client 5"
+    }
+  ],
+  "information": [
+    { "data": "Age:", "responseData": " 29" },
+    { "data": "Residence:", "responseData": " USA" },
+    {
+      "data": "Address:",
+      "responseData": " 88 Some Street, Some Town"
+    },
+    { "data": "E-mail:", "responseData": " email@example.com" },
+    { "data": "Phone:", "responseData": " +0123 123 456 789" },
+    { "data": "Freelance:", "responseData": " Available" }
+  ],
+  "services": [
+    {
+      "title": "Graphics Design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "icon": "Layers",
+      "bgColor": "#6de643"
+    },
+    {
+      "title": "Design Tools",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "icon": "PenTool",
+      "bgColor": "#f39b01"
+    },
+    {
+      "title": "Stunning Design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "icon": "Smartphone",
+      "bgColor": "#e643ae"
+    },
+    {
+      "title": "Project Management",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "icon": "Cloud",
+      "bgColor": "#436de6"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "imgSrc": "https://afsu.tohidur.com/img/blog-3.jpg",
+      "date": "December 5, 2023",
+      "author": "John Smith",
+      "description": "Interview Photographer Mark Seliger Agency"
+    },
+    {
+      "id": 2,
+      "imgSrc": "https://afsu.tohidur.com/img/zoom-3.jpg",
+      "date": "December 5, 2023",
+      "author": "John Smith",
+      "description": "The Beauty of Nature Captured in Frames"
+    },
+    {
+      "id": 3,
+      "imgSrc": "https://afsu.tohidur.com/img/blog-2.jpg",
+      "date": "December 5, 2023",
+      "author": "John Smith",
+      "description": "Exploring Urban Landscapes with Photography"
+    },
+    {
+      "id": 4,
+      "imgSrc": "https://afsu.tohidur.com/img/zoom-1.jpg",
+      "date": "December 5, 2023",
+      "author": "John Smith",
+      "description": "Capturing Memories through Portrait Photography"
+    },
+    {
+      "id": 5,
+      "imgSrc": "https://afsu.tohidur.com/img/zoom-2.jpg",
+      "date": "December 5, 2023",
+      "author": "John Smith",
+      "description": "Adventures in Wildlife Photography"
+    }
+  ],
+  "slides": [
+    {
+      "id": 1,
+      "imgSrc": "https://afsu.tohidur.com/img/blog-3.jpg",
+      "date": "December 5, 2023",
+      "author": "John Smith",
+      "description": "Interview Photographer Mark Seliger Agency"
+    },
+    {
+      "id": 2,
+      "imgSrc": "https://afsu.tohidur.com/img/zoom-3.jpg",
+      "date": "December 5, 2023",
+      "author": "John Smith",
+      "description": "The Beauty of Nature Captured in Frames"
+    },
+    {
+      "id": 3,
+      "imgSrc": "https://afsu.tohidur.com/img/blog-2.jpg",
+      "date": "December 5, 2023",
+      "author": "John Smith",
+      "description": "Exploring Urban Landscapes with Photography"
+    },
+    {
+      "id": 4,
+      "imgSrc": "https://afsu.tohidur.com/img/zoom-1.jpg",
+      "date": "December 5, 2023",
+      "author": "John Smith",
+      "description": "Capturing Memories through Portrait Photography"
+    },
+    {
+      "id": 5,
+      "imgSrc": "https://afsu.tohidur.com/img/zoom-2.jpg",
+      "date": "December 5, 2023",
+      "author": "John Smith",
+      "description": "Adventures in Wildlife Photography"
+    }
+  ],
+
+  "timelineData": [
+    {
+      "yearRange": "2018 to Present",
+      "role": "Graphic Designer",
+      "company": "Company",
+      "description": "Lorem ipsum indolor st amet, cmetc ur locing elit, sedi dinm indolo sum ind ol m indolor st amet, cmetcilmes."
+    },
+    {
+      "yearRange": "2016 to 2018",
+      "role": "Graphic Designer",
+      "company": "Company",
+      "description": "Lorem ipsum indolor st amet, cmetc ur locing elit, sedi dinm indolo sum ind ol m indolor st amet, cmetcilmes."
+    },
+    {
+      "yearRange": "2014 to 2016",
+      "role": "Graphic Designer",
+      "company": "Company",
+      "description": "Lorem ipsum indolor st amet, cmetc ur locing elit, sedi dinm indolo sum ind ol m indolor st amet, cmetcilmes."
+    }
+  ]
+}

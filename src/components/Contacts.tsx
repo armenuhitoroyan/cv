@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../style/About.module.css";
 import { UserInfoProps } from "../interfaces/Types";
+import Information from "../assets/files/json/Information.json";
 
 const UserInfo: React.FC<UserInfoProps> = ({
   data,
@@ -42,29 +43,20 @@ const Contacts: React.FC = () => {
             height: "100px",
           }}
         >
-          {[
-            { data: "Age:", responseData: " 29" },
-            { data: "Residence:", responseData: " USA" },
-            {
-              data: "Address:",
-              responseData: " 88 Some Street, Some Town",
-            },
-            { data: "E-mail:", responseData: " email@example.com" },
-            { data: "Phone:", responseData: " +0123 123 456 789" },
-            { data: "Freelance:", responseData: " Available" },
-          ].map((item, index) => (
-            <UserInfo
-              key={index}
-              data={item.data}
-              responseData={item.responseData}
-              style={{
-                backgroundColor: index % 2 === 0 ? "#f9f9f9" : "#edebeb",
-                padding: "1px",
-                borderRadius: "20px",
-              }}
-              classname="contact"
-            />
-          ))}
+          {Information &&
+            Information.map((item, index) => (
+              <UserInfo
+                key={index}
+                data={item.data}
+                responseData={item.responseData}
+                style={{
+                  backgroundColor: index % 2 === 0 ? "#f9f9f9" : "#edebeb",
+                  padding: "1px",
+                  borderRadius: "20px",
+                }}
+                classname="contact"
+              />
+            ))}
         </ul>
       </div>
     </div>

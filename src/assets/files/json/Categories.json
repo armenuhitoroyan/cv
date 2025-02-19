@@ -1,0 +1,7 @@
+[
+  { "id": "all", "label": "Show All" },
+  { "id": "design", "label": "Design" },
+  { "id": "branding", "label": "Branding" },
+  { "id": "development", "label": "Development" },
+  { "id": "ui/ux", "label": "UI/UX Design" }
+]

@@ -10,6 +10,7 @@ import Carousel from "../../components/Carousel";
 import Contacts from "../../components/contact/Contacts";
 import UserForm from "../../components/form/UserForm";
 import Header from "../../components/header/Header";
+import ContactList from "../../components/homepage/Contact";
 
 const Contact: React.FC = () => {
   useTitle("Contact Us");
@@ -18,7 +19,8 @@ const Contact: React.FC = () => {
     <div className={`flex-col items-center justify-center ${styles.container}`}>
       <Header title="Contact" ref="concat" img={bgImage} />
       <div className={styles.box}>
-        <Contacts />
+        {/* <Contacts /> */}
+        <ContactList />
         <div className={`flex items-center justify-center ${styles.map}`}></div>
         <div
           style={{ width: "100%" }}

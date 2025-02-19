@@ -4,44 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SlideData } from "../../../interfaces/Types";
+import Slides from "../../../assets/files/json/Slides.json";
 
-const slides: SlideData[] = [
-  {
-    id: 1,
-    imgSrc: "https://afsu.tohidur.com/img/blog-3.jpg",
-    date: "December 5, 2023",
-    author: "John Smith",
-    description: "Interview Photographer Mark Seliger Agency",
-  },
-  {
-    id: 2,
-    imgSrc: "https://afsu.tohidur.com/img/zoom-3.jpg",
-    date: "December 5, 2023",
-    author: "John Smith",
-    description: "The Beauty of Nature Captured in Frames",
-  },
-  {
-    id: 3,
-    imgSrc: "https://afsu.tohidur.com/img/blog-2.jpg",
-    date: "December 5, 2023",
-    author: "John Smith",
-    description: "Exploring Urban Landscapes with Photography",
-  },
-  {
-    id: 4,
-    imgSrc: "https://afsu.tohidur.com/img/zoom-1.jpg",
-    date: "December 5, 2023",
-    author: "John Smith",
-    description: "Capturing Memories through Portrait Photography",
-  },
-  {
-    id: 5,
-    imgSrc: "https://afsu.tohidur.com/img/zoom-2.jpg",
-    date: "December 5, 2023",
-    author: "John Smith",
-    description: "Adventures in Wildlife Photography",
-  },
-];
+const slides: SlideData[] = Slides;
 
 const PortfolioCarousel: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState(0);
