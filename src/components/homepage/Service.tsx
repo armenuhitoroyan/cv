@@ -1,10 +1,9 @@
 import React from "react";
 import styles from "../../style/Home2.module.css";
-import { Cloud, Layers, PenTool, Smartphone } from "lucide-react";
+import { Cloud, Layers, Loader, PenTool, Smartphone } from "lucide-react";
 
 import { Service } from "../../interfaces/Types";
 import { useRequest } from "../../hooks/useRequest";
-import Loader from "../Loading";
 
 // Icon-ների համապատասխանեցում
 const iconsMap: { [key: string]: React.ElementType } = {
@@ -20,11 +19,15 @@ const OurServices: React.FC = () => {
   });
 
   if (loading) {
-    return <Loader />;
+    return (
+      <div className="flex justify-center">
+        <Loader />
+      </div>
+    );
   }
 
   if (error) {
-    return <div>No data</div>;
+    return <div className="text-3xl">No data</div>;
   }
   return (
     <section className={`w-full flex flex-col lg:flex-row justify-around`}>

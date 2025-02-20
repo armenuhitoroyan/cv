@@ -11,7 +11,9 @@ const Card: React.FC<PricingCardProps> = ({
   btnHeight,
 }) => {
   return (
-    <div className="w-full flex justify-start items-center min-h-screen p-4">
+    <div
+      className={`w-full flex justify-start items-center min-h-screen p-4 ${styles.card_pricing}`}
+    >
       <div
         style={{ width: `${widthBottom}%` }}
         className=" flex-col lg:flex-col max-w-4xl w-full gap-4"

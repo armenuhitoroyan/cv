@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRequest } from "../hooks/useRequest";
 import { ImagesProps } from "../interfaces/Types";
+import { Loader } from "lucide-react";
 
 const Carousel: React.FC = () => {
   const { data, error, loading } = useRequest<ImagesProps>({
@@ -10,11 +11,15 @@ const Carousel: React.FC = () => {
   });
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center">
+        <Loader />
+      </div>
+    );
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div className="text-3xl">No data</div>;
   }
 
   // Settings

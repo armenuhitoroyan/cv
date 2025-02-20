@@ -1,3 +1,4 @@
+import { Loader } from "lucide-react";
 import { useRequest } from "../hooks/useRequest";
 import { LayoutProps, SkillCardProps } from "../interfaces/Types";
 import styles from "../style/About.module.css";
@@ -9,11 +10,15 @@ const Skills: React.FC<LayoutProps> = ({ isGridLayout }) => {
   });
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center">
+        <Loader />
+      </div>
+    );
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div className="text-3xl">No data</div>;
   }
 
   return (

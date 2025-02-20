@@ -10,7 +10,9 @@ export const useRequest = <T>({ url }: UseRequestProps<T>) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<T[]>(`http://localhost:3000/${url}`);
+        const response = await axios.get<T[]>(
+          `https://my-json-server.typicode.com/armenuhitoroyan/cv-api/${url}`
+        );
         setData(response.data);
       } catch (err) {
         setError(err instanceof Error ? err.message : "An error occurred");

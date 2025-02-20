@@ -5,7 +5,8 @@ import { FaLocationArrow, FaPhone, FaVoicemail } from "react-icons/fa";
 import styles from "../../style/Contact.module.css";
 import { ContactCardProps } from "../../interfaces/Types";
 import { useRequest } from "../../hooks/useRequest";
-import Loader from "../Loading";
+import { Loader } from "lucide-react";
+
 
 // Icon-ների map-ավորում
 const iconsMap: { [key: string]: React.ElementType } = {
@@ -19,17 +20,17 @@ const ContactList: React.FC = () => {
     url: "contacts", // API հասցեն․․․
   });
 
-  if (loading) {
-    return (
-      <div>
-        <Loader />
-      </div>
-    );
-  }
+   if (loading) {
+     return (
+       <div className="flex justify-center">
+         <Loader />
+       </div>
+     );
+   }
 
-  if (error) {
-    return <div>No data</div>;
-  }
+   if (error) {
+     return <div className="text-3xl">No data</div>;
+   }
 
   return (
     <div

@@ -15,7 +15,7 @@ import PortfolioCarousel from "../../components/homepage/PortfolioCarousel";
 const Home2: React.FC = () => {
   useTitle("Home 2");
   return (
-    <div>
+    <div className={styles.container}>
       <div
         style={{ width: "100%" }}
         className={`w-full flex flex-col lg:flex-row items-start ${styles.box}`}
@@ -161,8 +161,7 @@ const Home2: React.FC = () => {
             </p>
           </div>
           <div
-            style={{ width: "100%" }}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4"
+            className={`grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 ${styles.cards}`}
           >
             <Card
               marginTop="-40px"

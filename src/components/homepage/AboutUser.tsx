@@ -21,7 +21,7 @@ export const AboutUser: React.FC<AboutUserProps> = ({ color, onClick }) => {
         Graphic Designer, HTML Coder, PHP Programmer and Project Manager
       </p>
       <div
-        className={`w-full flex flex-col lg:flex-row justify-between items-center ${styles.freelance_context}`}
+        className={`w-full flex  lg:flex-row justify-between items-center ${styles.freelance_context}`}
       >
         <button
           onClick={() => onClick}
