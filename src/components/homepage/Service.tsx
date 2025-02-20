@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "../../../style/Home2.module.css";
+import styles from "../../style/Home2.module.css";
 import { Cloud, Layers, PenTool, Smartphone } from "lucide-react";
 
-import Services from "../../../assets/files/json/Services.json";
-import { Service } from "../../../interfaces/Types";
+import { Service } from "../../interfaces/Types";
+import { useRequest } from "../../hooks/useRequest";
+import Loader from "../Loading";
 
 // Icon-ների համապատասխանեցում
 const iconsMap: { [key: string]: React.ElementType } = {
@@ -13,14 +14,23 @@ const iconsMap: { [key: string]: React.ElementType } = {
   Cloud,
 };
 
-const services: Service[] = Services as Service[];
-
 const OurServices: React.FC = () => {
+  const { data, error, loading } = useRequest<Service>({
+    url: "services", // API հասցեն․․․
+  });
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return <div>No data</div>;
+  }
   return (
     <section className={`w-full flex flex-col lg:flex-row justify-around`}>
       <div className={`${styles.services}`}>
         <div className="w-full flex flex-col gap-5 lg:flex-row justify-around">
-          {services.map((service, index) => {
+          {data.map((service, index) => {
             const IconComponent = iconsMap[service.icon] || Cloud; // Default: Cloud
 
             return (

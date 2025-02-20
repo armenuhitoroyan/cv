@@ -1,40 +1,55 @@
 import React from "react";
-import { FaPhone, FaVoicemail, FaLocationArrow } from "react-icons/fa";
-import ContactsData from "../../assets/files/json/contacts.json";
 
-import styles from "../../style/Contact.module.css";
-
-import Data from "../../interfaces/Data";
 import Card from "./Card";
+import { FaLocationArrow, FaPhone, FaVoicemail } from "react-icons/fa";
+import styles from "../../style/Contact.module.css";
+import { ContactCardProps } from "../../interfaces/Types";
+import { useRequest } from "../../hooks/useRequest";
+import Loader from "../Loading";
 
 // Icon-ների map-ավորում
 const iconsMap: { [key: string]: React.ElementType } = {
-  FaPhone,
-  FaVoicemail,
-  FaLocationArrow,
+  FaPhone: FaPhone,
+  FaVoicemail: FaVoicemail,
+  FaLocationArrow: FaLocationArrow,
 };
 
-const Contacts: React.FC = () => {
-  // JSON ֆայլից icon-ի անունները փոխում ենք իրական icon-ներով
-  const userdata: Data[] = ContactsData.map((data) => ({
-    ...data,
-    icon: iconsMap[data.icon] || FaPhone, // Default icon: FaPhone
-  }));
+const ContactList: React.FC = () => {
+  const { data, error, loading } = useRequest<ContactCardProps>({
+    url: "contacts", // API հասցեն․․․
+  });
+
+  if (loading) {
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
+  }
+
+  if (error) {
+    return <div>No data</div>;
+  }
 
   return (
     <div
       className={`w-full flex flex-col items-center justify-center gap-10 lg:flex-row ${styles.contacts_container}`}
     >
-      {userdata.map((data, index) => (
-        <Card
-          key={index}
-          icon={<data.icon className={styles.fa_icon} />} // Այստեղ icon-ը JSX է դարձված
-          title={data.title}
-          description={data.description}
-        />
-      ))}
+      {data.map((contact, index) => {
+        // Ստանում ենք ճիշտ իկոնը `iconsMap`-ից
+        const IconComponent = iconsMap[contact.icon];
+
+        return (
+          <Card
+            key={index}
+            icon={IconComponent ? <IconComponent /> : null} // Եթե icon-ը գոյություն չունի, ցույց տալ null
+            title={contact.title}
+            description={contact.description}
+          />
+        );
+      })}
     </div>
   );
 };
 
-export default Contacts;
+export default ContactList;

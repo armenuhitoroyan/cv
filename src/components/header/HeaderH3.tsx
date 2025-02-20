@@ -1,4 +1,4 @@
-import AboutUser from "../homepage/home4/AboutUser";
+import AboutUser from "../homepage/AboutUser";
 
 import styles from "../../style/HeaderH3.module.css";
 import { Circle } from "lucide-react";

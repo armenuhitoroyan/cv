@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../../../style/Homepage.module.css";
+import styles from "../../style/Homepage.module.css";
 import AnimatedButton from "./AnimatedButton";
-import { ArticleCardProps } from "../../../interfaces/Types";
+import { ArticleCardProps } from "../../interfaces/Types";
 
 const Card: React.FC<ArticleCardProps> = ({
   image,

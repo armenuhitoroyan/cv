@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "../../style/Home2.module.css";
-import OurServices from "../../components/homepage/home2/Service";
-import WorkExperience from "../../components/homepage/home2/WorkExperience";
+import OurServices from "../../components/homepage/Service";
+import WorkExperience from "../../components/homepage/WorkExperience";
 import { useTitle } from "../../hooks/useTitle";
-import AboutUser from "../../components/homepage/home4/AboutUser";
+import AboutUser from "../../components/homepage/AboutUser";
 import TitleContainer from "../../components/Title";
 import RotatingImage from "../../components/RotatingImage";
 import bgImg from "../../assets/images/fog.png";
 import Footer from "../../components/footer/Footer";
 import Carousel from "../../components/Carousel";
 import Card from "../../components/pages/pricing_plans/Card";
-import PortfolioCarousel from "../../components/homepage/home2/PortfolioCarousel";
+import PortfolioCarousel from "../../components/homepage/PortfolioCarousel";
 
 const Home2: React.FC = () => {
   useTitle("Home 2");

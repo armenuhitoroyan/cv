@@ -1,16 +1,26 @@
-import { LayoutProps } from "../interfaces/Types";
+import { useRequest } from "../hooks/useRequest";
+import { LayoutProps, SkillCardProps } from "../interfaces/Types";
 import styles from "../style/About.module.css";
 import Card from "./pages/about/Card";
-import Knowledges from "../assets/files/json/Skills.json";
 
 const Skills: React.FC<LayoutProps> = ({ isGridLayout }) => {
-  const skills = Knowledges;
+  const { data, error, loading } = useRequest<SkillCardProps>({
+    url: "skills", // API հասցեն․․․
+  });
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div
       className={`${isGridLayout ? styles.grid_layout : styles.inline_layout}`}
     >
-      {skills.map((item, index) => (
+      {data.map((item, index) => (
         <Card
           key={index}
           percentage={item.percentage}

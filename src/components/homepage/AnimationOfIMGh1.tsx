@@ -1,4 +1,4 @@
-import styles from "../../../style/HeaderH1.module.css";
+import styles from "../../style/HeaderH1.module.css";
 
 const Animation: React.FC = () => (
   <div className={`${styles.animation_container}`}>

@@ -1,8 +1,8 @@
-import { AboutUser } from "../../components/homepage/home4/AboutUser";
-import Card from "../../components/homepage/home4/Card";
-import { Sidebar } from "../../components/homepage/home4/Sidebar";
+import { AboutUser } from "../../components/homepage/AboutUser";
+import Card from "../../components/homepage/ProfileCard";
+import { Sidebar } from "../../components/homepage/Sidebar";
 import { useTitle } from "../../hooks/useTitle";
-import Home4Props from "../../interfaces/Home4Props";
+import Home4Props from "../../interfaces/Types";
 import styles from "../../style/Home4.module.css";
 
 const Home4: React.FC<Home4Props> = ({ color, backgroundColor, title }) => {

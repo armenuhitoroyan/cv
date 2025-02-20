@@ -36,7 +36,7 @@ export interface CountFollwersProps {
   count: number;
 }
 
-export interface Images {
+export interface ImagesProps {
   id: number;
   src: string;
   category: string;
@@ -50,6 +50,14 @@ export type InfoCardProps = {
   title: string;
   text: string;
 };
+
+export interface Designs {
+  id: string;
+  src: string;
+  category: string;
+  title: string;
+  description: string;
+}
 
 /**
  *  Home 2 էջի տիպերը
@@ -71,6 +79,12 @@ export interface Service {
   bgColor: string;
 }
 
+export interface TimeLineProps {
+  yearRange: string;
+  role: string;
+  company: string;
+  description: string;
+}
 /**
  *  Home 3 էջի տվյալների տիպերը
  */
@@ -92,6 +106,12 @@ export interface AboutUserProps {
   onClick: void;
 }
 
+export interface HomeProps {
+  color: string;
+  backgroundColor?: string;
+  title?: string;
+}
+
 /** Footer */
 //
 export interface WebPagesProps {
@@ -108,6 +128,11 @@ export interface ListPagesProps {
 }
 
 // -----------------------------------------------
+// Service էջի տիպերը
+export interface Theme {
+  width: string;
+  height: string;
+}
 
 /**
  *  Portfolio և Portfolio Details էջերի տիպերը
@@ -335,4 +360,12 @@ export interface ErrorsForm {
   email?: string;
   phone?: string;
   department?: string;
+}
+
+/**
+ * UseRequest hook
+ */
+export interface UseRequestProps<T> {
+  url: string;
+  type?: new () => T;
 }

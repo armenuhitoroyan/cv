@@ -1,12 +1,8 @@
 import React from "react";
-import styles from "../../../style/Homepage.module.css";
-import { InfoCardProps } from "../../../interfaces/Types";
+import styles from "../../style/Homepage.module.css";
+import { InfoCardProps } from "../../interfaces/Types";
 
-const InfoCard: React.FC<InfoCardProps> = ({
-  Icon: Icon,
-  title,
-  text,
-}) => {
+const InfoCard: React.FC<InfoCardProps> = ({ Icon: Icon, title, text }) => {
   return (
     <div
       style={{ border: "3px solid #7b2ff7" }}

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../../../style/Home4.module.css";
-import Download from "../../form/Download";
+import styles from "../../style/Home4.module.css";
+import Download from "../form/Download";
 
 export const Card: React.FC = () => {
   return (

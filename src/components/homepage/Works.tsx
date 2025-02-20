@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import RotatingImage from "../../RotatingImage";
-import Designs from "../../../assets/files/json/Designs.json";
-import Categories from "../../../assets/files/json/Categories.json";
+import RotatingImage from "../RotatingImage";
+import Designs from "../../assets/files/json/Designs.json";
+import Categories from "../../assets/files/json/Categories.json";
 
 export const Works: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState("all");

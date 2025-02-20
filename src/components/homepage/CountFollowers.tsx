@@ -1,7 +1,7 @@
 // Հետևորդների քանակը հաշվող Component
 
-import { CountFollwersProps } from "../../../interfaces/Types";
-import styles from "../../../style/HeaderH1.module.css";
+import { CountFollwersProps } from "../../interfaces/Types";
+import styles from "../../style/HeaderH1.module.css";
 
 const CountFollwers: React.FC<CountFollwersProps> = ({
   count,

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../../../style/Home4.module.css";
-import { AboutUserProps } from "../../../interfaces/Types";
+import styles from "../../style/Home4.module.css";
+import { AboutUserProps } from "../../interfaces/Types";
 
 export const AboutUser: React.FC<AboutUserProps> = ({ color, onClick }) => {
   return (

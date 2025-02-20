@@ -1,4 +1,4 @@
-import AboutUser from "../homepage/home4/AboutUser";
+import AboutUser from "../homepage/AboutUser";
 import ProfileImg from "./ProfileImg";
 import styles from "../../style/HeaderH1.module.css";
 

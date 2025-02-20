@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import styles from "../../../style/Home2.module.css";
+import styles from "../../style/Home2.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { SlideData } from "../../../interfaces/Types";
-import Slides from "../../../assets/files/json/Slides.json";
+import { SlideData } from "../../interfaces/Types";
+import Slides from "../../assets/files/json/Slides.json";
 
 const slides: SlideData[] = Slides;
 
@@ -28,7 +28,7 @@ const PortfolioCarousel: React.FC = () => {
           <div
             key={index}
             style={{
-              transform: `scale(${index === activeSlide ? 1.2 : 0.8})`,
+              transform: `scale(${index === activeSlide ? 1.8 : 0.8})`, // ✅ fixed template literal
               transition: "transform 0.3s ease",
               zIndex: index === activeSlide ? 1 : 0,
             }}

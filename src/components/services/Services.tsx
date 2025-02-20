@@ -3,11 +3,12 @@ import styles from "../../style/Services.module.css";
 
 import Card from "../contact/Card";
 import { FaBars, FaPen, FaDotCircle, FaFilePdf } from "react-icons/fa";
-import Data from "../../interfaces/Data";
-import Theme from "../../interfaces/Theme";
+import { Theme } from "../../interfaces/Types";
+
+import  { ContactCardProps } from "../../interfaces/Types";
 
 const ServicesComponent: React.FC = () => {
-  const info: Data[] = [
+  const info: ContactCardProps[] = [
     {
       icon: <FaPen className={styles.fa_icon} />,
       title: "Graphichs Design",

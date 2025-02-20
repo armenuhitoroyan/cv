@@ -1,9 +1,9 @@
 import AuthorInfo from "../../components/AuthorInformation";
 import Footer from "../../components/footer/Footer";
 import UserForm from "../../components/form/UserForm";
-import Card from "../../components/homepage/home1/Card";
-import InfoCard from "../../components/homepage/home1/InfoCard";
-import Works from "../../components/homepage/home1/Works";
+import Card from "../../components/homepage/Card";
+import InfoCard from "../../components/homepage/InfoCard";
+import Works from "../../components/homepage/Works";
 import ResumeComponent from "../../components/Resume";
 import ServicesComponent from "../../components/services/Services";
 import { HiMiniEnvelope, HiMiniMapPin, HiPhone } from "react-icons/hi2";

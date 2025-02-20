@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../../../style/Home4.module.css";
-import Home4Props from "../../../interfaces/Home4Props";
+import styles from "../../style/Home4.module.css";
+import Home4Props from "../../interfaces/Types";
 import { IoHomeOutline } from "react-icons/io5";
 import {
   SlUser,

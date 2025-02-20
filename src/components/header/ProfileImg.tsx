@@ -1,7 +1,7 @@
 import { Circle } from "lucide-react";
 import profileImg from "../../assets/images/630.png";
-import Animation from "../homepage/home1/AnimationOfIMGh1";
-import CountFollowers from "../homepage/home1/CountFollowers";
+import Animation from "../homepage/AnimationOfIMGh1";
+import CountFollowers from "../homepage/CountFollowers";
 import styles from "../../style/HeaderH1.module.css";
 
 const ProfileImg: React.FC = () => {

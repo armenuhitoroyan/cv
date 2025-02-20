@@ -1,6 +1,6 @@
 import { useState } from "react";
-import styles from "../../../style/Home2.module.css";
-import TimeLineData from "../../../assets/files/json/TimeLineData.json";
+import styles from "../../style/Home2.module.css";
+import TimeLineData from "../../assets/files/json/TimeLineData.json";
 
 const timelineData = TimeLineData;
 

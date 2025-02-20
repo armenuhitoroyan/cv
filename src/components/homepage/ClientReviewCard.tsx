@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../../../style/Home3.module.css";
-import { DataCard } from "../../../interfaces/Types";
+import styles from "../../style/Home3.module.css";
+import { DataCard } from "../../interfaces/Types";
 
 const Card: React.FC<DataCard> = ({ description, icon, author, byAuthor }) => {
   return (
